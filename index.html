@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alan Al-Jamour | Software Developer Portfolio</title>
+  <meta name="description" content="Portfolio og CV for Alan Al-Jamour – datamatikerstuderende med fokus på Java, Spring Boot, REST APIs, SQL, Docker, CI/CD og full-stack webudvikling." />
+  <meta name="theme-color" content="#07130f" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <canvas id="matrixCanvas" aria-hidden="true"></canvas>
+
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a href="#top" class="logo" aria-label="Til toppen">
+      <span class="logo-mark">A</span>
+      <span class="logo-text">L-JAMOUR</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Hovednavigation">
+      <a href="#about">Om mig</a>
+      <a href="#stack">Stack</a>
+      <a href="#projects">Projekter</a>
+      <a href="#timeline">Retning</a>
+<!--      <a href="#contact">Kontakt</a>-->
+    </nav>
+
+    <div class="header-actions">
+      <a
+              class="icon-btn"
+              href="https://github.com/aljamour"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+                  d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.36 9.36 0 0 1 12 6.99c.85 0 1.7.12 2.5.35 1.9-1.33 2.74-1.05 2.74-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9v2.77c0 .27.18.6.69.49A10.05 10.05 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"
+          />
+        </svg>
+      </a>
+
+      <a
+              class="icon-btn"
+              href="https://www.linkedin.com/in/alan-al-jamour-a83b52352/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+                  d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5ZM.35 8h4.3v14h-4.3V8Zm7.15 0h4.12v1.9h.06c.57-1.08 1.98-2.22 4.08-2.22 4.36 0 5.17 2.87 5.17 6.6V22h-4.3v-6.84c0-1.63-.03-3.73-2.27-3.73-2.28 0-2.63 1.78-2.63 3.61V22H7.5V8Z"
+          />
+        </svg>
+      </a>
+
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Skift tema">
+        <span aria-hidden="true">◐</span>
+      </button>
+
+      <a class="btn small ghost" href="#contact">Kontakt</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Software Developer · Full-stack · Problem solver</p>
+
+        <h1>
+          Jeg bygger digitale løsninger,
+          <span class="gradient-text">der giver mening i virkeligheden.</span>
+        </h1>
+
+        <p class="hero-lead">
+          Navnet er Al-Jamour... Alan Al-Jamour, en nysgerrig softwareudvikler med fokus på Java,
+          Spring Boot, REST APIs, databaser, Docker og moderne webapplikationer.
+          Jeg kan lide at tage en idé fra problem til fungerende produkt.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">Se mine projekter</a>
+          <a class="btn ghost" href="#contact">Lad os snakke</a>
+          <button class="btn ghost" id="printCv" type="button">Print CV</button>
+        </div>
+
+        <div class="hero-stats" aria-label="Kort profil">
+          <article>
+            <strong>Java</strong>
+            <span>Spring Boot & JPA</span>
+          </article>
+          <article>
+            <strong>DevOps</strong>
+            <span>Docker & CI/CD</span>
+          </article>
+          <article>
+            <strong>Full-stack</strong>
+            <span>REST + frontend</span>
+          </article>
+        </div>
+      </div>
+
+      <aside class="terminal-card reveal" aria-label="Programmer terminal">
+        <div class="terminal-top">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">alan@portfolio:~</span>
+        </div>
+
+        <div class="terminal-body">
+          <p><span class="prompt">$</span> whoami</p>
+          <p class="terminal-output">Alan Al-Jamour — future software developer</p>
+
+          <p><span class="prompt">$</span> stack --main</p>
+          <p class="terminal-output">Java · Spring Boot · SQL · Docker · GitHub Actions · REST</p>
+
+          <p><span class="prompt">$</span> mission</p>
+          <p class="terminal-output">
+            Build useful systems. Learn deeply. Improve every iteration.
+          </p>
+
+          <p><span class="prompt">$</span> open opportunities<span class="cursor">_</span></p>
+        </div>
+
+        <div class="floating-chip chip-one">REST API</div>
+        <div class="floating-chip chip-two">Dockerized</div>
+        <div class="floating-chip chip-three">CI/CD</div>
+      </aside>
+    </section>
+
+    <section id="about" class="section-shell about-grid">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Om mig</p>
+        <h2>Ikke bare et CV. En lille fortælling om hvordan jeg arbejder.</h2>
+      </div>
+
+      <div class="about-card reveal">
+        <p>
+          Jeg valgte softwareudvikling, fordi det tvinger mig til at tænke struktureret,
+          kreativt og løsningsorienteret samt skabe værdi for mennesker. Jeg bliver motiveret af problemer, hvor man ikke
+          bare kan kopiere en løsning, men skal forstå systemet bag.
+        </p>
+        <p>
+          Mine projekter har især givet mig erfaring med backend, API-design,
+          relationelle databaser, frontend-integration, Docker, Git, Linux og CI/CD.
+          Jeg prøver at skrive kode, der ikke kun virker, men også kan læses,
+          udvides og forklares.
+        </p>
+      </div>
+
+      <div class="principles reveal">
+        <article>
+          <span>01</span>
+          <h3>Forstå først</h3>
+          <p>Jeg prøver at forstå problemet, domænet og brugeren før jeg skriver løsningen.</p>
+        </article>
+
+        <article>
+          <span>02</span>
+          <h3>Byg simpelt</h3>
+          <p>Jeg starter med det vigtigste, får det til at virke, og forbedrer derefter.</p>
+        </article>
+
+        <article>
+          <span>03</span>
+          <h3>Lær konstant</h3>
+          <p>Jeg bruger fejl, debugging og feedback som en aktiv del af læringen.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="stack" class="section-shell">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Teknologier</p>
+        <h2>Min tekniske værktøjskasse</h2>
+      </div>
+
+      <div class="stack-layout">
+        <article class="stack-panel reveal">
+          <h3>Backend</h3>
+          <div class="skill-cloud">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>Spring MVC</span>
+            <span>Spring Data JPA</span>
+            <span>Hibernate</span>
+            <span>REST APIs</span>
+            <span>Validation</span>
+          </div>
+        </article>
+
+        <article class="stack-panel reveal">
+          <h3>Database & data</h3>
+          <div class="skill-cloud">
+            <span>SQL</span>
+            <span>MySQL</span>
+            <span>H2</span>
+            <span>Flyway</span>
+            <span>ER-modeller</span>
+            <span>DTO Mapping</span>
+          </div>
+        </article>
+
+        <article class="stack-panel reveal">
+          <h3>Frontend</h3>
+          <div class="skill-cloud">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Fetch API</span>
+            <span>Responsive design</span>
+            <span>UI Structure</span>
+          </div>
+        </article>
+
+        <article class="stack-panel reveal">
+          <h3>DevOps & infrastruktur</h3>
+          <div class="skill-cloud">
+            <span>Docker</span>
+            <span>Docker Compose</span>
+            <span>Git</span>
+            <span>GitHub Actions</span>
+            <span>Linux terminal</span>
+            <span>HTTP</span>
+            <span>DNS</span>
+            <span>TCP/IP</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section-shell">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Projekter</p>
+        <h2>Udvalgte projekter med rigtig systemtænkning</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured reveal">
+          <div class="project-meta">
+            <span>Full-stack</span>
+            <span>Java · Spring Boot · MySQL</span>
+          </div>
+          <h3>Slik Skoven og Is</h3>
+          <p>
+            En webapplikation til en slikbutik med produktoversigt, kategorier,
+            nyheder, adminfunktioner og bestilling af bland-selv slikposer.
+          </p>
+          <ul>
+            <li>Admin CRUD til produkter og nyheder</li>
+            <li>REST API mellem frontend og backend</li>
+            <li>Docker Compose med frontend, backend og database</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" aria-label="Indsæt GitHub link for Slik Skoven og Is">GitHub link →</a>
+            <a href="#" aria-label="Indsæt live demo link for Slik Skoven og Is">Live demo →</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-meta">
+            <span>Exam project</span>
+            <span>REST · JPA · Algorithm</span>
+          </div>
+          <h3>SeismicMonitor</h3>
+          <p>
+            Et system der modtager sensordata, validerer målinger, gemmer rå data
+            og opretter jordskælvsalarmer ved gyldige målinger.
+          </p>
+          <ul>
+            <li>Sensor readings, alerts og status workflow</li>
+            <li>API endpoints til admin og brugere</li>
+            <li>Frontend til aktive alarmer og rapportering</li>
+          </ul>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-meta">
+            <span>Project management</span>
+            <span>Java · Spring Boot · Thymeleaf</span>
+          </div>
+          <h3>Project Calculation Tool</h3>
+          <p>
+            Et webbaseret projektstyringssystem, hvor project managers og team members
+            kan arbejde med projekter, delprojekter og opgaver gennem rollebaseret adgang.
+          </p>
+          <ul>
+            <li>Login med forskellige roller og rettigheder</li>
+            <li>Projects, subprojects og task management</li>
+            <li>Statusflow for opgaver gemt direkte i databasen</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/KimL92/Project-Calculation-Tool" target="_blank" rel="noopener noreferrer">
+              GitHub link →
+            </a>
+            <a href="https://project-calculationstool-egg6b5aphbgecyh4.norwayeast-01.azurewebsites.net" target="_blank" rel="noopener noreferrer">
+              Live demo →
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="timeline" class="section-shell">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Retning</p>
+        <h2>Min retning som udvikler</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <p class="timeline-date">Fundament</p>
+          <h3>Softwareudvikling</h3>
+          <p>
+            Java, objektorienteret programmering, Spring Boot, REST APIs,
+            databaser og full-stack webudvikling.
+          </p>
+        </article>
+
+        <article class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <p class="timeline-date">Næste semester</p>
+          <h3>AI agenter og automatisering</h3>
+          <p>
+            Hvordan AI kan bruges til at automatisere arbejdsgange,
+            bygge flows og skabe praktisk værdi i softwareløsninger.
+          </p>
+        </article>
+
+        <article class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <p class="timeline-date">Næste semester</p>
+          <h3>Python</h3>
+          <p>
+            Forståelse for scripting, datahåndtering, automatisering og AI-relaterede opgaver.
+          </p>
+        </article>
+
+        <article class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <p class="timeline-date">Næste semester</p>
+          <h3>DevOps</h3>
+          <p>
+            Forståelse for deployment, automatisering, CI/CD, containere og
+            den infrastruktur, der får software til at køre stabilt.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-shell value-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Hvorfor mig?</p>
+        <h2>Det jeg kan bidrage med på en arbejdsplads</h2>
+      </div>
+
+      <div class="value-grid">
+        <article class="value-card reveal">
+          <h3>Jeg kan forklare min kode</h3>
+          <p>Jeg arbejder ikke kun for at få koden til at køre. Jeg vil forstå hvorfor den virker.</p>
+        </article>
+
+        <article class="value-card reveal">
+          <h3>Jeg lærer hurtigt</h3>
+          <p>Når jeg møder fejl, bruger jeg dem til at forstå frameworks, dataflow og systemdesign bedre.</p>
+        </article>
+
+        <article class="value-card reveal">
+          <h3>Jeg tænker i produkter</h3>
+          <p>Jeg prøver at forbinde tekniske valg med brugerens behov og virksomhedens mål.</p>
+        </article>
+
+        <article class="value-card reveal">
+          <h3>Ikke kun bag skærmen</h3>
+          <p>
+            Jeg kan godt lide at fordybe mig i kode, men jeg kan lige så godt lide
+            den almindelige del af en arbejdsplads — at snakke med kollegaer,
+            samarbejde og være en del af miljøet omkring mig.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="contact" class="section-shell contact-section reveal">
+      <div>
+        <p class="eyebrow">Kontakt</p>
+        <h2>Skal vi bygge noget sammen?</h2>
+        <p>
+          Jeg søger relevante studiejob, praktikmuligheder og steder hvor jeg kan vokse
+          som softwareudvikler. Send mig gerne en besked.
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <span class="contact-label">Email</span>
+
+        <div class="contact-row">
+          <a href="mailto:aal.jamour9@gmail.com">aal.jamour9
+            @gmail.com</a>
+          <button class="btn primary" id="copyEmail" type="button">Kopiér email</button>
+        </div>
+
+        <p id="copyStatus" role="status" aria-live="polite"></p>
+      </div>
+
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="#top">Til toppen ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
