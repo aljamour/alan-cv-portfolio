@@ -112,3 +112,44 @@ window.alan = new Proxy(commands, {
 });
 
 console.log("%cTry: alan.help", "color:#47f5a7;font-size:16px;font-weight:bold;");
+
+const languageToggle = document.querySelector("#languageToggle");
+const languageLabel = document.querySelector("#languageLabel");
+
+let currentLanguage = localStorage.getItem("portfolio-language") || "da";
+
+function setLanguage(language) {
+  currentLanguage = language;
+  document.documentElement.lang = language;
+
+  document
+      .querySelectorAll("[data-da][data-en]")
+      .forEach(element => {
+        element.textContent = language === "da" ? element.dataset.da : element.dataset.en;
+      });
+
+  document
+      .querySelectorAll("[data-aria-da][data-aria-en]")
+      .forEach(element => {
+        element.setAttribute("aria-label", language === "da" ? element.dataset.ariaDa : element.dataset.ariaEn);
+      });
+
+  document
+      .querySelectorAll("[data-alt-da][data-alt-en]")
+      .forEach(element => {
+        element.alt = language === "da" ? element.dataset.altDa : element.dataset.altEn;});
+
+  languageLabel.textContent = language === "da" ? "EN" : "DA";
+
+  languageToggle.setAttribute("aria-label", language === "da" ? "Switch to English" : "Skift til dansk");
+
+  localStorage.setItem("portfolio-language", language);
+}
+
+languageToggle.addEventListener("click", () => {
+  const nextLanguage = currentLanguage === "da" ? "en" : "da";
+
+  setLanguage(nextLanguage);
+});
+
+setLanguage(currentLanguage);
