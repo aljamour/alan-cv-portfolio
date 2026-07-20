@@ -99,7 +99,8 @@ document.querySelector("#printCv").addEventListener("click", () => {
 // Small Easter egg for the programmer vibe
 const commands = {
   "alan.help": "Commands: alan.stack, alan.projects, alan.contact",
-  "alan.stack": "Java, Spring Boot, SQL, Docker, virtuelle maskiner, Linux, SSH, Nginx, HTTPS, GitHub Actions, HTML, CSS, JavaScript",  "alan.projects": "Slik Skoven og Is & SeismicMonitor",
+  "alan.stack": "Java, Spring Boot, SQL, Docker, virtuelle maskiner, Linux, SSH, Nginx, HTTPS, GitHub Actions, HTML, CSS, JavaScript",
+  "alan.projects": "Project Calculation Tool | Slik Skoven & Is",
   "alan.contact": email
 };
 
