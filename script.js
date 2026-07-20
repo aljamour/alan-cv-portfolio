@@ -6,8 +6,7 @@ let height;
 let columns;
 let drops;
 
-const characters = "01{}[]<>/ Java Spring Boot REST SQL Docker CI/CD Git Linux ";
-
+const characters = "01{}[]<>/ Java Spring Boot REST SQL Docker CI/CD Git Linux VM SSH Nginx HTTPS ";
 function setupCanvas() {
   width = canvas.width = window.innerWidth;
   height = canvas.height = window.innerHeight;
@@ -100,8 +99,7 @@ document.querySelector("#printCv").addEventListener("click", () => {
 // Small Easter egg for the programmer vibe
 const commands = {
   "alan.help": "Commands: alan.stack, alan.projects, alan.contact",
-  "alan.stack": "Java, Spring Boot, SQL, Docker, GitHub Actions, HTML, CSS, JavaScript",
-  "alan.projects": "Slik Skoven og Is, SeismicMonitor, Tour de France API, Prayer Tracking App",
+  "alan.stack": "Java, Spring Boot, SQL, Docker, virtuelle maskiner, Linux, SSH, Nginx, HTTPS, GitHub Actions, HTML, CSS, JavaScript",  "alan.projects": "Slik Skoven og Is & SeismicMonitor",
   "alan.contact": email
 };
 
