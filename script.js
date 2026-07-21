@@ -6,7 +6,7 @@ let height;
 let columns;
 let drops;
 
-const characters = "01{}[]<>/ Java Spring Boot REST SQL Docker CI/CD Git Linux VM SSH Nginx HTTPS ";
+const characters = "01{}[]<>/ Java Spring Boot REST SQL Docker Git Linux VM SSH Nginx HTTPS DNS HTTP TCP/IP ";
 
 function setupCanvas() {
   width = canvas.width = window.innerWidth;

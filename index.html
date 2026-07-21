@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="meta.title">Alan Al-Jamour | Software Developer Portfolio</title>
-  <meta name="description" data-i18n-content="meta.description" content="Portfolio og CV for Alan Al-Jamour – datamatikerstuderende med fokus på Java, Spring Boot, REST APIs, SQL, Docker, virtuelle maskiner, Linux-serverdrift, CI/CD og full-stack webudvikling.">
+  <meta name="description" data-i18n-content="meta.description" content="Portfolio og CV for Alan Al-Jamour – datamatikerstuderende med fokus på Java, Spring Boot, REST APIs, SQL, Docker, virtuelle maskiner, Linux-serverdrift og full-stack webudvikling.">
   <meta name="theme-color" content="#07130f" />
   <link rel="icon" type="image/jpeg" href="assets/raven.jpg">
   <link rel="stylesheet" href="styles.css">
@@ -119,8 +119,8 @@
           <span>Spring Boot & JPA</span>
         </article>
         <article>
-          <strong>DevOps</strong>
-          <span>Docker & CI/CD</span>
+          <strong data-i18n="hero.infrastructure">Infrastruktur</strong>
+          <span data-i18n="hero.infrastructureStack">Docker & Linux</span>
         </article>
         <article>
           <strong>Full-stack</strong>
@@ -159,7 +159,7 @@
 
       <div class="floating-chip chip-one">REST API</div>
       <div class="floating-chip chip-two" data-i18n="terminal.dockerized">Docker-baseret</div>
-      <div class="floating-chip chip-three">CI/CD</div>
+      <div class="floating-chip chip-three">Nginx</div>
     </aside>
   </section>
 
@@ -178,7 +178,7 @@
       <p data-i18n="about.intro2">
         Mine projekter har især givet mig erfaring med backend, API-design,
         relationelle databaser, frontend-integration, Docker, Git, Linux,
-        virtuelle maskiner & CI/CD. Jeg har blandt andet deployet en
+        virtuelle maskiner & serverdrift. Jeg har blandt andet deployet en
         Docker-baseret Spring Boot-applikation med MySQL på en Ubuntu-server
         ved hjælp af SSH, Nginx, eget domæne & HTTPS.
       </p>
@@ -273,7 +273,7 @@
       <article class="competency-row reveal">
         <div class="competency-heading">
           <span>04</span>
-          <h3 data-i18n="skills.devops">DevOps & infrastruktur</h3>
+          <h3 data-i18n="skills.devops">Drift & infrastruktur</h3>
         </div>
 
         <div class="competency-tags">
@@ -300,8 +300,6 @@
 
         <div class="competency-tags">
           <span>Git & GitHub</span>
-          <span>GitHub Actions</span>
-          <span data-i18n="skills.cicdPipelines">CI/CD-pipelines</span>
           <span>OOP</span>
           <span>Agile / Scrum</span>
           <span data-i18n="skills.debugging">Debugging</span>
@@ -482,6 +480,38 @@
 
       <article class="experience-item reveal">
         <div class="experience-period">
+          <span data-i18n="experience.barista.start">Dec. 2024</span>
+          <span>—</span>
+          <span data-i18n="experience.barista.end">Okt. 2025</span>
+        </div>
+
+        <div class="experience-content">
+          <div class="experience-topline">
+            <div>
+              <h3>Catering Barista</h3>
+              <p class="experience-company">
+                Marias Kaffebar · Nørrebro
+              </p>
+            </div>
+
+            <span class="experience-type" data-i18n="experience.partTime">Deltid</span>
+          </div>
+
+          <p class="experience-summary" data-i18n="experience.barista.summary">
+            Tilberedning og servering af drikkevarer, kundebetjening
+            og håndtering af bestillinger i et travlt cafémiljø.
+          </p>
+
+          <div class="experience-tags">
+            <span data-i18n="tags.service">Service</span>
+            <span data-i18n="tags.efficiency">Effektivitet</span>
+            <span data-i18n="tags.customerContact">Kundekontakt</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="experience-item reveal">
+        <div class="experience-period">
           <span data-i18n="experience.delivr.period">Sommer 2025</span>
         </div>
 
@@ -511,38 +541,6 @@
             <span data-i18n="tags.customerContact">Kundekontakt</span>
             <span data-i18n="tags.problemSolving">Problemløsning</span>
             <span data-i18n="tags.responsibility">Ansvar</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="experience-item reveal">
-        <div class="experience-period">
-          <span data-i18n="experience.barista.start">Dec. 2024</span>
-          <span>—</span>
-          <span data-i18n="experience.barista.end">Okt. 2025</span>
-        </div>
-
-        <div class="experience-content">
-          <div class="experience-topline">
-            <div>
-              <h3>Catering Barista</h3>
-              <p class="experience-company">
-                Marias Kaffebar · Nørrebro
-              </p>
-            </div>
-
-            <span class="experience-type" data-i18n="experience.partTime">Deltid</span>
-          </div>
-
-          <p class="experience-summary" data-i18n="experience.barista.summary">
-            Tilberedning og servering af drikkevarer, kundebetjening
-            og håndtering af bestillinger i et travlt cafémiljø.
-          </p>
-
-          <div class="experience-tags">
-            <span data-i18n="tags.service">Service</span>
-            <span data-i18n="tags.efficiency">Effektivitet</span>
-            <span data-i18n="tags.customerContact">Kundekontakt</span>
           </div>
         </div>
       </article>
@@ -819,7 +817,7 @@
   <section class="section-shell value-section">
     <div class="section-heading reveal">
       <p class="eyebrow" data-i18n="value.eyebrow">Hvorfor mig?</p>
-      <h2>Hvad jeg tager med på arbejdspladsen</h2>
+      <h2 data-i18n="value.title">Hvad jeg tager med på arbejdspladsen</h2>
     </div>
 
     <div class="value-grid">

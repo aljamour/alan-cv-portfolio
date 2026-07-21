@@ -1,7 +1,7 @@
 window.translations = {
     da: {
         "meta.title": "Alan Al-Jamour | Softwareudvikler-portfolio",
-        "meta.description": "Portfolio og CV for Alan Al-Jamour – datamatikerstuderende med fokus på Java, Spring Boot, REST APIs, SQL, Docker, virtuelle maskiner, Linux-serverdrift, CI/CD og full-stack webudvikling.",
+        "meta.description": "Portfolio og CV for Alan Al-Jamour – datamatikerstuderende med fokus på Java, Spring Boot, REST APIs, SQL, Docker, virtuelle maskiner, Linux-serverdrift og full-stack webudvikling.",
 
         "header.toTop": "Til toppen",
         "nav.main": "Hovednavigation",
@@ -21,6 +21,8 @@ window.translations = {
         "hero.eyebrow": "Softwareudvikler · Full-stack · Problemløser",
         "hero.title": "Digitale løsninger,",
         "hero.titleAccent": "praktisk.",
+        "hero.infrastructure": "Infrastruktur",
+        "hero.infrastructureStack": "Docker & Linux",
         "hero.lead": "Navnet er Al-Jamour... Alan Al-Jamour, en nysgerrig softwareudvikler med fokus på Java, Spring Boot, REST APIs, databaser, Docker og moderne webapplikationer med voksende interesse for AI-agenter og automatisering samt IT-sikkerhed. Jeg går et spadestik dybere for at forstå, hvordan teknologien hænger sammen.",
         "hero.projectsButton": "Se mine projekter",
         "hero.contactButton": "Lad os snakke",
@@ -36,7 +38,7 @@ window.translations = {
         "about.eyebrow": "Om mig",
         "about.title": "Hvordan jeg arbejder",
         "about.intro1": "Jeg valgte softwareudvikling, fordi det tvinger mig til at tænke struktureret, kreativt og løsningsorienteret samt skabe værdi for mennesker. Jeg bliver motiveret af problemer, hvor man ikke bare kan kopiere en løsning, men skal forstå systemet bag.",
-        "about.intro2": "Mine projekter har især givet mig erfaring med backend, API-design, relationelle databaser, frontend-integration, Docker, Git, Linux, virtuelle maskiner og CI/CD. Jeg har blandt andet deployet en Docker-baseret Spring Boot-applikation med MySQL på en Ubuntu-server ved hjælp af SSH, Nginx, eget domæne og HTTPS.",
+        "about.intro2": "Mine projekter har især givet mig erfaring med backend, API-design, relationelle databaser, frontend-integration, Docker, Git, Linux, virtuelle maskiner og serverdrift. Jeg har blandt andet deployet en Docker-baseret Spring Boot-applikation med MySQL på en Ubuntu-server ved hjælp af SSH, Nginx, eget domæne og HTTPS.",
         "about.intro3": "Jeg prøver at skrive kode, der ikke kun virker, men også kan læses, udvides og forklares.",
         "about.understand.title": "Forstå først",
         "about.understand.text": "Jeg prøver at forstå problemet, domænet og brugeren, før jeg skriver løsningen.",
@@ -54,12 +56,11 @@ window.translations = {
         "skills.database": "Database & data",
         "skills.erModels": "ER-modeller",
         "skills.dtoMapping": "DTO-mapping",
-        "skills.devops": "DevOps & infrastruktur",
+        "skills.devops": "Drift & infrastruktur",
         "skills.virtualMachines": "Virtuelle maskiner",
         "skills.ubuntuOperations": "Ubuntu-serverdrift",
         "skills.cloudHosting": "Cloud-hosting",
         "skills.methods": "Udviklingsmetoder",
-        "skills.cicdPipelines": "CI/CD-pipelines",
         "skills.debugging": "Debugging",
         "skills.problemSolving": "Problemløsning",
 
@@ -164,6 +165,7 @@ window.translations = {
         "education.python.item4": "LLM-integration og debugging",
 
         "value.eyebrow": "Hvorfor mig?",
+        "value.title": "Hvad jeg tager med på arbejdspladsen",
         "value.explain.title": "Jeg kan forklare min kode",
         "value.explain.text": "Jeg arbejder ikke kun for at få koden til at køre. Jeg vil forstå, hvorfor den virker.",
         "value.learn.title": "Jeg lærer hurtigt",
@@ -186,7 +188,7 @@ window.translations = {
 
     en: {
         "meta.title": "Alan Al-Jamour | Software Developer Portfolio",
-        "meta.description": "Portfolio and CV for Alan Al-Jamour, an AP Degree in Computer Science student focused on Java, Spring Boot, REST APIs, SQL, Docker, virtual machines, Linux server operations, CI/CD and full-stack web development.",
+        "meta.description": "Portfolio and CV for Alan Al-Jamour, an AP Degree in Computer Science student focused on Java, Spring Boot, REST APIs, SQL, Docker, virtual machines, Linux server operations and full-stack web development.",
 
         "header.toTop": "Back to top",
         "nav.main": "Main navigation",
@@ -206,6 +208,8 @@ window.translations = {
         "hero.eyebrow": "Software Developer · Full-stack · Problem Solver",
         "hero.title": "Digital solutions,",
         "hero.titleAccent": "made practical.",
+        "hero.infrastructure": "Infrastructure",
+        "hero.infrastructureStack": "Docker & Linux",
         "hero.lead": "My name is Al-Jamour... Alan Al-Jamour, a curious software developer focused on Java, Spring Boot, REST APIs, databases, Docker and modern web applications, with a growing interest in AI agents, automation and IT security. I go one step deeper to understand how the technology fits together.",
         "hero.projectsButton": "View my projects",
         "hero.contactButton": "Let's talk",
@@ -221,7 +225,7 @@ window.translations = {
         "about.eyebrow": "About",
         "about.title": "How I work",
         "about.intro1": "I chose software development because it challenges me to think in a structured, creative and solution-oriented way while creating value for people. I am motivated by problems where you cannot simply copy a solution, but need to understand the underlying system.",
-        "about.intro2": "My projects have given me experience with backend development, API design, relational databases, frontend integration, Docker, Git, Linux, virtual machines and CI/CD. I have deployed a Docker-based Spring Boot application with MySQL on an Ubuntu server using SSH, Nginx, a custom domain and HTTPS.",
+        "about.intro2": "My projects have given me experience with backend development, API design, relational databases, frontend integration, Docker, Git, Linux, virtual machines and server operations. I have deployed a Docker-based Spring Boot application with MySQL on an Ubuntu server using SSH, Nginx, a custom domain and HTTPS.",
         "about.intro3": "I aim to write code that not only works, but can also be read, extended and explained.",
         "about.understand.title": "Understand first",
         "about.understand.text": "I try to understand the problem, domain and user before writing the solution.",
@@ -239,12 +243,11 @@ window.translations = {
         "skills.database": "Database & data",
         "skills.erModels": "ER models",
         "skills.dtoMapping": "DTO mapping",
-        "skills.devops": "DevOps & infrastructure",
+        "skills.devops": "Operations & infrastructure",
         "skills.virtualMachines": "Virtual machines",
         "skills.ubuntuOperations": "Ubuntu server operations",
         "skills.cloudHosting": "Cloud hosting",
         "skills.methods": "Development methods",
-        "skills.cicdPipelines": "CI/CD pipelines",
         "skills.debugging": "Debugging",
         "skills.problemSolving": "Problem solving",
 
@@ -349,6 +352,7 @@ window.translations = {
         "education.python.item4": "LLM integration and debugging",
 
         "value.eyebrow": "Why me?",
+        "value.title": "What I bring to the workplace",
         "value.explain.title": "I can explain my code",
         "value.explain.text": "I do not only work to make the code run. I want to understand why it works.",
         "value.learn.title": "I learn quickly",
