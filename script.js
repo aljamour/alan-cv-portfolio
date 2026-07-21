@@ -86,6 +86,9 @@ revealElements.forEach(element => revealObserver.observe(element));
 
 const languageToggle = document.querySelector("#languageToggle");
 const languageLabel = document.querySelector("#languageLabel");
+const siteHeader = document.querySelector(".site-header");
+const menuToggle = document.querySelector("#menuToggle");
+const mainNavigation = document.querySelector("#mainNavigation");
 const supportedLanguages = ["da", "en"];
 const savedLanguage = localStorage.getItem("portfolio-language");
 
@@ -128,8 +131,27 @@ function updateLanguageToggle() {
   const isDanish = currentLanguage === "da";
 
   languageLabel.textContent = isDanish ? "EN" : "DA";
-  languageToggle.setAttribute("aria-label", isDanish ? t("language.switchToEnglish") : t("language.switchToDanish")
+  languageToggle.setAttribute(
+      "aria-label",
+      isDanish ? t("language.switchToEnglish") : t("language.switchToDanish")
   );
+}
+
+function isMenuOpen() {
+  return menuToggle.getAttribute("aria-expanded") === "true";
+}
+
+function updateMenuToggleLabel() {
+  menuToggle.setAttribute(
+      "aria-label",
+      t(isMenuOpen() ? "nav.closeMenu" : "nav.openMenu")
+  );
+}
+
+function setMenuOpen(shouldOpen) {
+  siteHeader.classList.toggle("menu-open", shouldOpen);
+  menuToggle.setAttribute("aria-expanded", String(shouldOpen));
+  updateMenuToggleLabel();
 }
 
 const copyEmailButton = document.querySelector("#copyEmail");
@@ -161,6 +183,7 @@ function setLanguage(language) {
   translatePage();
   updateLanguageToggle();
   updateThemeToggleLabel();
+  updateMenuToggleLabel();
 
   if (copyStatusKey) {
     copyStatus.textContent = t(copyStatusKey);
@@ -172,6 +195,35 @@ function setLanguage(language) {
 languageToggle.addEventListener("click", () => {
   const nextLanguage = currentLanguage === "da" ? "en" : "da";
   setLanguage(nextLanguage);
+});
+
+menuToggle.addEventListener("click", () => {
+  setMenuOpen(!isMenuOpen());
+});
+
+mainNavigation.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    setMenuOpen(false);
+  });
+});
+
+document.addEventListener("pointerdown", event => {
+  if (isMenuOpen() && !siteHeader.contains(event.target)) {
+    setMenuOpen(false);
+  }
+});
+
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape" && isMenuOpen()) {
+    setMenuOpen(false);
+    menuToggle.focus();
+  }
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 980 && isMenuOpen()) {
+    setMenuOpen(false);
+  }
 });
 
 setLanguage(currentLanguage);

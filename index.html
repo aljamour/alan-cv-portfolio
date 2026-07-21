@@ -24,7 +24,7 @@
     <span class="logo-text">AL-JAMOUR</span>
   </a>
 
-  <nav class="desktop-nav" aria-label="Hovednavigation" data-i18n-aria-label="nav.main">
+  <nav class="desktop-nav" id="mainNavigation" aria-label="Hovednavigation" data-i18n-aria-label="nav.main">
     <a href="#about" data-i18n="nav.about">Om mig</a>
     <a href="#stack" data-i18n="nav.skills">Kompetencer</a>
     <a href="#projects" data-i18n="nav.projects">Projekter</a>
@@ -69,6 +69,21 @@
 
     <button class="icon-btn language-toggle" id="languageToggle" type="button" aria-label="Switch to English">
       <span id="languageLabel">EN</span>
+    </button>
+
+    <button
+            class="icon-btn menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-controls="mainNavigation"
+            aria-expanded="false"
+            aria-label="Åbn menu"
+    >
+      <span class="menu-icon" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
     </button>
   </div>
 </header>
