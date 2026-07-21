@@ -7,6 +7,7 @@ let columns;
 let drops;
 
 const characters = "01{}[]<>/ Java Spring Boot REST SQL Docker CI/CD Git Linux VM SSH Nginx HTTPS ";
+
 function setupCanvas() {
   width = canvas.width = window.innerWidth;
   height = canvas.height = window.innerHeight;
@@ -19,8 +20,8 @@ function drawMatrix() {
   ctx.fillRect(0, 0, width, height);
 
   ctx.fillStyle = getComputedStyle(document.documentElement)
-    .getPropertyValue("--accent")
-    .trim();
+      .getPropertyValue("--accent")
+      .trim();
 
   ctx.font = "14px Consolas, monospace";
 
@@ -54,84 +55,122 @@ function setTheme(theme) {
 }
 
 const savedTheme = localStorage.getItem("portfolio-theme");
-if (savedTheme) {
+
+if (savedTheme === "light" || savedTheme === "dark") {
   setTheme(savedTheme);
 }
 
 themeToggle.addEventListener("click", () => {
   const currentTheme = document.documentElement.dataset.theme;
-  setTheme(currentTheme === "light" ? "dark" : "light");
+  const nextTheme = currentTheme === "light" ? "dark" : "light";
+
+  setTheme(nextTheme);
+  updateThemeToggleLabel();
 });
 
 const revealElements = document.querySelectorAll(".reveal");
 
 const revealObserver = new IntersectionObserver(
-  entries => {
-    for (const entry of entries) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        revealObserver.unobserve(entry.target);
+    entries => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          revealObserver.unobserve(entry.target);
+        }
       }
-    }
-  },
-  { threshold: 0.14 }
+    },
+    { threshold: 0.14 }
 );
 
 revealElements.forEach(element => revealObserver.observe(element));
+
+const languageToggle = document.querySelector("#languageToggle");
+const languageLabel = document.querySelector("#languageLabel");
+const supportedLanguages = ["da", "en"];
+const savedLanguage = localStorage.getItem("portfolio-language");
+
+let currentLanguage = supportedLanguages.includes(savedLanguage) ? savedLanguage : "da";
+
+function t(key) {
+  return (window.translations[currentLanguage]?.[key] ?? window.translations.da?.[key] ?? key);
+}
+
+function translatePage() {
+  document.querySelectorAll("[data-i18n]").forEach(element => {
+    const key = element.dataset.i18n;
+    element.textContent = t(key);
+  });
+
+  document.querySelectorAll("[data-i18n-aria-label]").forEach(element => {
+    const key = element.getAttribute("data-i18n-aria-label");
+    element.setAttribute("aria-label", t(key));
+  });
+
+  document.querySelectorAll("[data-i18n-alt]").forEach(element => {
+    const key = element.getAttribute("data-i18n-alt");
+    element.alt = t(key);
+  });
+
+  document.querySelectorAll("[data-i18n-content]").forEach(element => {
+    const key = element.getAttribute("data-i18n-content");
+    element.setAttribute("content", t(key));
+  });
+}
+
+function updateThemeToggleLabel() {
+  const currentTheme = document.documentElement.dataset.theme || "dark";
+  const translationKey = currentTheme === "light" ? "theme.switchToDark" : "theme.switchToLight";
+
+  themeToggle.setAttribute("aria-label", t(translationKey));
+}
+
+function updateLanguageToggle() {
+  const isDanish = currentLanguage === "da";
+
+  languageLabel.textContent = isDanish ? "EN" : "DA";
+  languageToggle.setAttribute("aria-label", isDanish ? t("language.switchToEnglish") : t("language.switchToDanish")
+  );
+}
 
 const copyEmailButton = document.querySelector("#copyEmail");
 const copyStatus = document.querySelector("#copyStatus");
 const email = "aal.jamour9@gmail.com";
 
+let copyStatusKey = null;
+
 copyEmailButton.addEventListener("click", async () => {
   try {
     await navigator.clipboard.writeText(email);
-    copyStatus.textContent = "Email kopieret";
+    copyStatusKey = "contact.copySuccess";
   } catch {
-    copyStatus.textContent = "Kunne ikke kopiere automatisk. Marker emailen manuelt.";
+    copyStatusKey = "contact.copyError";
   }
+
+  copyStatus.textContent = t(copyStatusKey);
 });
 
 document.querySelector("#printCv").addEventListener("click", () => {
   window.print();
 });
 
-const languageToggle = document.querySelector("#languageToggle");
-const languageLabel = document.querySelector("#languageLabel");
-
-let currentLanguage = localStorage.getItem("portfolio-language") || "da";
-
 function setLanguage(language) {
-  currentLanguage = language;
-  document.documentElement.lang = language;
+  currentLanguage = supportedLanguages.includes(language) ? language : "da";
 
-  document
-      .querySelectorAll("[data-da][data-en]")
-      .forEach(element => {
-        element.textContent = language === "da" ? element.dataset.da : element.dataset.en;
-      });
+  document.documentElement.lang = currentLanguage;
 
-  document
-      .querySelectorAll("[data-aria-da][data-aria-en]")
-      .forEach(element => {
-        element.setAttribute("aria-label", language === "da" ? element.dataset.ariaDa : element.dataset.ariaEn);
-      });
+  translatePage();
+  updateLanguageToggle();
+  updateThemeToggleLabel();
 
-  document
-      .querySelectorAll("[data-alt-da][data-alt-en]")
-      .forEach(element => {
-        element.alt = language === "da" ? element.dataset.altDa : element.dataset.altEn;});
+  if (copyStatusKey) {
+    copyStatus.textContent = t(copyStatusKey);
+  }
 
-  languageLabel.textContent = language === "da" ? "EN" : "DA";
-
-  languageToggle.setAttribute("aria-label", language === "da" ? "Switch to English" : "Skift til dansk");
-
-  localStorage.setItem("portfolio-language", language);
+  localStorage.setItem("portfolio-language", currentLanguage);
 }
 
 languageToggle.addEventListener("click", () => {
   const nextLanguage = currentLanguage === "da" ? "en" : "da";
-
   setLanguage(nextLanguage);
 });
 
