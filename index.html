@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title data-i18n="meta.title">Alan Al-Jamour | Portfolio</title>
-  <meta name="description" data-i18n-content="meta.description" content="Portfolio og CV for Alan Al-Jamour – datamatikerstuderende med fokus på Java, Spring Boot, REST APIs, SQL, Docker, virtuelle maskiner, Linux-serverdrift og full-stack webudvikling.">
-  <meta name="theme-color" content="#07130f" />
-  <link rel="icon" type="image/jpeg" href="assets/ninja.jpg">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="meta.title">Alan Al-Jamour | Portfolio</title>
+    <meta name="description" data-i18n-content="meta.description" content="Portfolio og CV for Alan Al-Jamour – datamatikerstuderende med fokus på Java, Spring Boot, REST APIs, SQL, Docker, virtuelle maskiner, Linux-serverdrift og full-stack webudvikling.">
+    <meta name="theme-color" content="#07130f" />
+    <link rel="icon" type="image/jpeg" href="assets/ninja.jpg">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -16,945 +16,1005 @@
 <div class="noise" aria-hidden="true"></div>
 
 <header class="site-header">
-  <a href="#top" class="logo" aria-label="Til toppen" data-i18n-aria-label="header.toTop">
+    <a href="#top" class="logo" aria-label="Til toppen" data-i18n-aria-label="header.toTop">
       <span class="logo-mark" aria-hidden="true">
         <img class="logo-image" src="assets/ninja.jpg" alt="">
       </span>
 
-    <span class="logo-text">AL-JAMOUR</span>
-  </a>
-
-  <nav class="desktop-nav" id="mainNavigation" aria-label="Hovednavigation" data-i18n-aria-label="nav.main">
-    <a href="#about" data-i18n="nav.about">Om mig</a>
-    <a href="#stack" data-i18n="nav.skills">Kompetencer</a>
-    <a href="#projects" data-i18n="nav.projects">Projekter</a>
-    <a href="#experience" data-i18n="nav.experience">Erfaring</a>
-    <a href="#education" data-i18n="nav.education">Uddannelse</a>
-    <a href="#contact" data-i18n="nav.contact">Kontakt</a>
-  </nav>
-
-  <div class="header-actions">
-
-    <a
-            class="icon-btn"
-            href="https://github.com/aljamour"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub"
-    >
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path
-                d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.36 9.36 0 0 1 12 6.99c.85 0 1.7.12 2.5.35 1.9-1.33 2.74-1.05 2.74-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9v2.77c0 .27.18.6.69.49A10.05 10.05 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"
-        />
-      </svg>
+        <span class="logo-text">AL-JAMOUR</span>
     </a>
 
-    <a
-            class="icon-btn"
-            href="https://www.linkedin.com/in/alan-al-jamour-a83b52352/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-    >
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path
-                d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5ZM.35 8h4.3v14h-4.3V8Zm7.15 0h4.12v1.9h.06c.57-1.08 1.98-2.22 4.08-2.22 4.36 0 5.17 2.87 5.17 6.6V22h-4.3v-6.84c0-1.63-.03-3.73-2.27-3.73-2.28 0-2.63 1.78-2.63 3.61V22H7.5V8Z"
-        />
-      </svg>
-    </a>
+    <nav class="desktop-nav" id="mainNavigation" aria-label="Hovednavigation" data-i18n-aria-label="nav.main">
+        <a href="#about" data-i18n="nav.about">Om mig</a>
+        <a href="#stack" data-i18n="nav.skills">Kompetencer</a>
+        <a href="#projects" data-i18n="nav.projects">Projekter</a>
+        <a href="#experience" data-i18n="nav.experience">Erfaring</a>
+        <a href="#education" data-i18n="nav.education">Uddannelse</a>
+        <a href="#contact" data-i18n="nav.contact">Kontakt</a>
+    </nav>
 
-    <button class="icon-btn" id="themeToggle" type="button" aria-label="Skift tema">
-      <span aria-hidden="true">◐</span>
-    </button>
+    <div class="header-actions">
 
-    <button class="icon-btn language-toggle" id="languageToggle" type="button" aria-label="Switch to English">
-      <span id="languageLabel">EN</span>
-    </button>
+        <a
+                class="icon-btn"
+                href="https://github.com/aljamour"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+        >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                        d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.36 9.36 0 0 1 12 6.99c.85 0 1.7.12 2.5.35 1.9-1.33 2.74-1.05 2.74-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9v2.77c0 .27.18.6.69.49A10.05 10.05 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"
+                />
+            </svg>
+        </a>
 
-    <button
-            class="icon-btn menu-toggle"
-            id="menuToggle"
-            type="button"
-            aria-controls="mainNavigation"
-            aria-expanded="false"
-            aria-label="Åbn menu"
-    >
+        <a
+                class="icon-btn"
+                href="https://www.linkedin.com/in/alan-al-jamour-a83b52352/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+        >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                        d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5ZM.35 8h4.3v14h-4.3V8Zm7.15 0h4.12v1.9h.06c.57-1.08 1.98-2.22 4.08-2.22 4.36 0 5.17 2.87 5.17 6.6V22h-4.3v-6.84c0-1.63-.03-3.73-2.27-3.73-2.28 0-2.63 1.78-2.63 3.61V22H7.5V8Z"
+                />
+            </svg>
+        </a>
+
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Skift tema">
+            <span aria-hidden="true">◐</span>
+        </button>
+
+        <button class="icon-btn language-toggle" id="languageToggle" type="button" aria-label="Switch to English">
+            <span id="languageLabel">EN</span>
+        </button>
+
+        <button
+                class="icon-btn menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-controls="mainNavigation"
+                aria-expanded="false"
+                aria-label="Åbn menu"
+        >
       <span class="menu-icon" aria-hidden="true">
         <span></span>
         <span></span>
         <span></span>
       </span>
-    </button>
-  </div>
+        </button>
+    </div>
 </header>
 
 <main id="top">
-  <section class="hero section-shell">
-    <div class="hero-copy reveal">
-      <p class="eyebrow" data-i18n="hero.eyebrow">
-        Softwareudvikler · Full-stack · Problemløser
-      </p>
+    <section class="hero section-shell">
+        <div class="hero-copy reveal">
+            <p class="eyebrow" data-i18n="hero.eyebrow">
+                Softwareudvikler · Full-stack · Problemløser
+            </p>
 
-      <h1>
-        <span data-i18n="hero.title">Digitale løsninger,</span>
-        <span class="gradient-text" data-i18n="hero.titleAccent">praktisk.</span>
-      </h1>
+            <h1>
+                <span data-i18n="hero.title">Digitale løsninger,</span>
+                <span class="gradient-text" data-i18n="hero.titleAccent">praktisk.</span>
+            </h1>
 
-      <p class="hero-lead" data-i18n="hero.lead">
-        Navnet er Al-Jamour... Alan Al-Jamour, en nysgerrig softwareudvikler med fokus på Java,
-        Spring Boot, REST APIs, databaser, Docker og moderne webapplikationer med voksende interesse
-        for AI-agenter og automatisering samt IT-sikkerhed.
-        Jeg går et spadestik dybere for at forstå, hvordan teknologien hænger sammen.
-      </p>
+            <p class="hero-lead" data-i18n="hero.lead">
+                Navnet er Al-Jamour... Alan Al-Jamour, en nysgerrig softwareudvikler med fokus på Java,
+                Spring Boot, REST APIs, databaser, Docker og moderne webapplikationer med voksende interesse
+                for AI-agenter og automatisering samt IT-sikkerhed.
+                Jeg går et spadestik dybere for at forstå, hvordan teknologien hænger sammen.
+            </p>
 
-      <div class="hero-actions">
-        <a class="btn primary" href="#projects" data-i18n="hero.projectsButton">Se mine projekter</a>
-        <a class="btn ghost" href="#contact" data-i18n="hero.contactButton">Lad os snakke</a>
-        <button class="btn ghost" id="printCv" type="button" data-i18n="hero.printButton">Print CV</button>
-      </div>
+            <div class="hero-actions">
+                <a class="btn primary" href="#projects" data-i18n="hero.projectsButton">Se mine projekter</a>
+                <a class="btn ghost" href="#contact" data-i18n="hero.contactButton">Lad os snakke</a>
+                <button class="btn ghost" id="printCv" type="button" data-i18n="hero.printButton">Print CV</button>
+            </div>
 
-      <div class="hero-stats" aria-label="Kort profil" data-i18n-aria-label="hero.profileAria">
-        <article>
-          <strong>Java</strong>
-          <span>Spring Boot & JPA</span>
-        </article>
-        <article>
-          <strong data-i18n="hero.infrastructure">Infrastruktur</strong>
-          <span data-i18n="hero.infrastructureStack">Docker & Linux</span>
-        </article>
-        <article>
-          <strong>Full-stack</strong>
-          <span>REST + frontend</span>
-        </article>
-      </div>
-    </div>
-
-    <aside class="terminal-card reveal" aria-label="Programmerterminal" data-i18n-aria-label="terminal.aria">
-      <div class="terminal-top">
-        <span class="dot red"></span>
-        <span class="dot yellow"></span>
-        <span class="dot green"></span>
-        <span class="terminal-title">alan@portfolio:~</span>
-      </div>
-
-      <div class="terminal-body">
-        <p><span class="prompt">$</span> whoami</p>
-        <p class="terminal-output" data-i18n="terminal.whoami">
-          Alan Al-Jamour — kommende softwareudvikler
-        </p>
-
-        <p><span class="prompt">$</span> stack --main</p>
-        <p class="terminal-output">Java · Spring Boot · SQL · Docker · VMs · Linux · REST</p>
-
-        <p><span class="prompt">$</span> mission</p>
-        <p class="terminal-output" data-i18n="terminal.mission">
-          Byg nyttige systemer. Lær i dybden. Forbedr hver iteration.
-        </p>
-
-        <p>
-          <span class="prompt">$</span>
-          <span data-i18n="terminal.open">åben for muligheder</span><span class="cursor">_</span>
-        </p>
-      </div>
-
-      <div class="floating-chip chip-one">REST API</div>
-      <div class="floating-chip chip-two" data-i18n="terminal.dockerized">Docker-baseret</div>
-      <div class="floating-chip chip-three">Nginx</div>
-    </aside>
-  </section>
-
-  <section id="about" class="section-shell about-grid">
-    <div class="section-heading reveal">
-      <p class="eyebrow" data-i18n="about.eyebrow">Om mig</p>
-      <h2 data-i18n="about.title">Hvordan jeg arbejder</h2>
-    </div>
-
-    <div class="about-card reveal">
-      <p data-i18n="about.intro1">
-        Jeg valgte softwareudvikling, fordi det tvinger mig til at tænke struktureret,
-        kreativt og løsningsorienteret samt skabe værdi for mennesker. Jeg bliver motiveret af problemer, hvor man ikke
-        bare kan kopiere en løsning, men skal forstå systemet bag.
-      </p>
-      <p data-i18n="about.intro2">
-        Mine projekter har især givet mig erfaring med backend, API-design,
-        relationelle databaser, frontend-integration, Docker, Git, Linux,
-        virtuelle maskiner & serverdrift. Jeg har blandt andet deployet en
-        Docker-baseret Spring Boot-applikation med MySQL på en Ubuntu-server
-        ved hjælp af SSH, Nginx, eget domæne & HTTPS.
-      </p>
-
-      <p data-i18n="about.intro3">
-        Jeg prøver at skrive kode, der ikke kun virker, men også kan læses,
-        udvides og forklares.
-      </p>
-    </div>
-
-    <div class="principles reveal">
-      <article>
-        <span>01</span>
-        <h3 data-i18n="about.understand.title">Forstå først</h3>
-        <p data-i18n="about.understand.text">Jeg prøver at forstå problemet, domænet og brugeren før jeg skriver løsningen.</p>
-      </article>
-
-      <article>
-        <span>02</span>
-        <h3 data-i18n="about.simple.title">Byg simpelt</h3>
-        <p data-i18n="about.simple.text">Jeg starter med det vigtigste, får det til at virke, og forbedrer derefter.</p>
-      </article>
-
-      <article>
-        <span>03</span>
-        <h3 data-i18n="about.learn.title">Lær konstant</h3>
-        <p data-i18n="about.learn.text">Jeg bruger fejl, debugging og feedback som en aktiv del af læringen.</p>
-      </article>
-    </div>
-  </section>
-
-  <section id="stack" class="section-shell">
-    <div class="section-heading reveal">
-      <p class="eyebrow" data-i18n="skills.eyebrow">Kompetencer</p>
-      <h2 data-i18n="skills.title">Teknologier & metoder</h2>
-
-      <p class="section-intro" data-i18n="skills.intro">
-        Teknologier jeg har arbejdet med gennem uddannelse,
-        projekter & deployment af egne applikationer.
-      </p>
-    </div>
-
-    <div class="competency-list">
-
-      <article class="competency-row reveal">
-        <div class="competency-heading">
-          <span>01</span>
-          <h3 data-i18n="skills.programming">Programmering</h3>
+            <div class="hero-stats" aria-label="Kort profil" data-i18n-aria-label="hero.profileAria">
+                <article>
+                    <strong>Java</strong>
+                    <span>Spring Boot & JPA</span>
+                </article>
+                <article>
+                    <strong data-i18n="hero.infrastructure">Infrastruktur</strong>
+                    <span data-i18n="hero.infrastructureStack">Docker & Linux</span>
+                </article>
+                <article>
+                    <strong>Full-stack</strong>
+                    <span>REST + frontend</span>
+                </article>
+            </div>
         </div>
 
-        <div class="competency-tags">
-          <span>Java</span>
-          <span>JavaScript</span>
-          <span>HTML</span>
-          <span>CSS</span>
-        </div>
-      </article>
+        <aside class="terminal-card reveal" aria-label="Programmerterminal" data-i18n-aria-label="terminal.aria">
+            <div class="terminal-top">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="terminal-title">alan@portfolio:~</span>
+            </div>
 
-      <article class="competency-row reveal">
-        <div class="competency-heading">
-          <span>02</span>
-          <h3 data-i18n="skills.backend">Backend & web</h3>
-        </div>
+            <div class="terminal-body">
+                <p><span class="prompt">$</span> whoami</p>
+                <p class="terminal-output" data-i18n="terminal.whoami">
+                    Alan Al-Jamour — kommende softwareudvikler
+                </p>
 
-        <div class="competency-tags">
-          <span>Spring Boot</span>
-          <span>Spring MVC</span>
-          <span>Spring Data JPA</span>
-          <span>Hibernate</span>
-          <span>REST APIs</span>
-          <span data-i18n="skills.validation">Validering</span>
-          <span>Thymeleaf</span>
-        </div>
-      </article>
+                <p><span class="prompt">$</span> stack --main</p>
+                <p class="terminal-output">Java · Spring Boot · SQL · Docker · VMs · Linux · REST</p>
 
-      <article class="competency-row reveal">
-        <div class="competency-heading">
-          <span>03</span>
-          <h3 data-i18n="skills.database">Database & data</h3>
-        </div>
+                <p><span class="prompt">$</span> mission</p>
+                <p class="terminal-output" data-i18n="terminal.mission">
+                    Byg nyttige systemer. Lær i dybden. Forbedr hver iteration.
+                </p>
 
-        <div class="competency-tags">
-          <span>SQL</span>
-          <span>MySQL</span>
-          <span>H2</span>
-          <span>Flyway</span>
-          <span data-i18n="skills.erModels">ER-modeller</span>
-          <span data-i18n="skills.dtoMapping">DTO-mapping</span>
-        </div>
-      </article>
+                <p>
+                    <span class="prompt">$</span>
+                    <span data-i18n="terminal.open">åben for muligheder</span><span class="cursor">_</span>
+                </p>
+            </div>
 
-      <article class="competency-row reveal">
-        <div class="competency-heading">
-          <span>04</span>
-          <h3 data-i18n="skills.devops">Drift & infrastruktur</h3>
+            <div class="floating-chip chip-one">REST API</div>
+            <div class="floating-chip chip-two" data-i18n="terminal.dockerized">Docker-baseret</div>
+            <div class="floating-chip chip-three">Nginx</div>
+        </aside>
+    </section>
+
+    <section id="about" class="section-shell about-grid">
+        <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="about.eyebrow">Om mig</p>
+            <h2 data-i18n="about.title">Hvordan jeg arbejder</h2>
         </div>
 
-        <div class="competency-tags">
-          <span>Docker</span>
-          <span>Docker Compose</span>
-          <span data-i18n="skills.virtualMachines">Virtuelle maskiner</span>
-          <span data-i18n="skills.ubuntuOperations">Ubuntu-serverdrift</span>
-          <span>Linux / CLI</span>
-          <span>SSH</span>
-          <span>Nginx</span>
-          <span>HTTPS / TLS</span>
-          <span>DNS</span>
-          <span>HTTP</span>
-          <span>TCP/IP</span>
-          <span data-i18n="skills.cloudHosting">Cloud-hosting</span>
-        </div>
-      </article>
+        <div class="about-card reveal">
+            <p data-i18n="about.intro1">
+                Jeg valgte softwareudvikling, fordi det tvinger mig til at tænke struktureret,
+                kreativt og løsningsorienteret samt skabe værdi for mennesker. Jeg bliver motiveret af problemer, hvor man ikke
+                bare kan kopiere en løsning, men skal forstå systemet bag.
+            </p>
+            <p data-i18n="about.intro2">
+                Mine projekter har især givet mig erfaring med backend, API-design,
+                relationelle databaser, frontend-integration, Docker, Git, Linux,
+                virtuelle maskiner & serverdrift. Jeg har blandt andet deployet en
+                Docker-baseret Spring Boot-applikation med MySQL på en Ubuntu-server
+                ved hjælp af SSH, Nginx, eget domæne & HTTPS.
+            </p>
 
-      <article class="competency-row reveal">
-        <div class="competency-heading">
-          <span>05</span>
-          <h3 data-i18n="skills.methods">Udviklingsmetoder</h3>
+            <p data-i18n="about.intro3">
+                Jeg prøver at skrive kode, der ikke kun virker, men også kan læses,
+                udvides og forklares.
+            </p>
         </div>
 
-        <div class="competency-tags">
-          <span>Git & GitHub</span>
-          <span>OOP</span>
-          <span>Agile / Scrum</span>
-          <span data-i18n="skills.debugging">Debugging</span>
-          <span data-i18n="skills.problemSolving">Problemløsning</span>
+        <div class="principles reveal">
+            <article>
+                <span>01</span>
+                <h3 data-i18n="about.understand.title">Forstå først</h3>
+                <p data-i18n="about.understand.text">Jeg prøver at forstå problemet, domænet og brugeren før jeg skriver løsningen.</p>
+            </article>
+
+            <article>
+                <span>02</span>
+                <h3 data-i18n="about.simple.title">Byg simpelt</h3>
+                <p data-i18n="about.simple.text">Jeg starter med det vigtigste, får det til at virke, og forbedrer derefter.</p>
+            </article>
+
+            <article>
+                <span>03</span>
+                <h3 data-i18n="about.learn.title">Lær konstant</h3>
+                <p data-i18n="about.learn.text">Jeg bruger fejl, debugging og feedback som en aktiv del af læringen.</p>
+            </article>
         </div>
-      </article>
+    </section>
 
-    </div>
-  </section>
+    <section id="stack" class="section-shell">
+        <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="skills.eyebrow">Kompetencer</p>
+            <h2 data-i18n="skills.title">Teknologier & metoder</h2>
 
-  <section id="projects" class="section-shell">
-    <div class="section-heading reveal">
-      <p class="eyebrow" data-i18n="projects.eyebrow">Projekter</p>
-      <h2 data-i18n="projects.title">Udvalgte projekter</h2>
-
-      <p class="section-intro" data-i18n="projects.intro">
-        Et udvalg af projekter, hvor jeg har arbejdet med softwareudvikling,
-        databaser, API-design og deployment.
-      </p>
-    </div>
-
-    <div class="project-grid">
-
-
-      <!-- Project Calculation Tool -->
-      <article class="project-card reveal">
-        <div class="project-card-top">
-          <span class="project-number">01</span>
-
-          <a
-                  class="project-launch"
-                  href="https://pctool.software"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Åbn Project Calculation Tool"
-                  data-i18n-aria-label="projects.pct.openAria"
-          >
-            <span class="project-launch-label">Live</span>
-
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                      d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3ZM5 5h6v2H5v12h12v-6h2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"
-              />
-            </svg>
-          </a>
+            <p class="section-intro" data-i18n="skills.intro">
+                Teknologier jeg har arbejdet med gennem uddannelse,
+                projekter & deployment af egne applikationer.
+            </p>
         </div>
 
-        <a
-                class="project-media"
-                href="https://pctool.software"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Åbn Project Calculation Tool"
-                data-i18n-aria-label="projects.pct.openAria"
-        >
-          <img
-                  src="assets/projects/pct.forside.png"
-                  alt="Forhåndsvisning af Project Calculation Tool"
-                  data-i18n-alt="projects.pct.imageAlt"
-                  loading="lazy"
-                  decoding="async"
-          >
+        <div class="competency-list">
 
-          <span class="project-media-action" data-i18n="projects.openProject">
+            <article class="competency-row reveal">
+                <div class="competency-heading">
+                    <span>01</span>
+                    <h3 data-i18n="skills.programming">Programmering</h3>
+                </div>
+
+                <div class="competency-tags">
+                    <span>Java</span>
+                    <span>JavaScript</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+            </article>
+
+            <article class="competency-row reveal">
+                <div class="competency-heading">
+                    <span>02</span>
+                    <h3 data-i18n="skills.backend">Backend & web</h3>
+                </div>
+
+                <div class="competency-tags">
+                    <span>Spring Boot</span>
+                    <span>Spring MVC</span>
+                    <span>Spring Data JPA</span>
+                    <span>Hibernate</span>
+                    <span>REST APIs</span>
+                    <span data-i18n="skills.validation">Validering</span>
+                    <span>Thymeleaf</span>
+                </div>
+            </article>
+
+            <article class="competency-row reveal">
+                <div class="competency-heading">
+                    <span>03</span>
+                    <h3 data-i18n="skills.database">Database & data</h3>
+                </div>
+
+                <div class="competency-tags">
+                    <span>SQL</span>
+                    <span>MySQL</span>
+                    <span>H2</span>
+                    <span>Flyway</span>
+                    <span data-i18n="skills.erModels">ER-modeller</span>
+                    <span data-i18n="skills.dtoMapping">DTO-mapping</span>
+                </div>
+            </article>
+
+            <article class="competency-row reveal">
+                <div class="competency-heading">
+                    <span>04</span>
+                    <h3 data-i18n="skills.devops">Drift & infrastruktur</h3>
+                </div>
+
+                <div class="competency-tags">
+                    <span>Docker</span>
+                    <span>Docker Compose</span>
+                    <span data-i18n="skills.virtualMachines">Virtuelle maskiner</span>
+                    <span data-i18n="skills.ubuntuOperations">Ubuntu-serverdrift</span>
+                    <span>Linux / CLI</span>
+                    <span>SSH</span>
+                    <span>Nginx</span>
+                    <span>HTTPS / TLS</span>
+                    <span>DNS</span>
+                    <span>HTTP</span>
+                    <span>TCP/IP</span>
+                    <span data-i18n="skills.cloudHosting">Cloud-hosting</span>
+                </div>
+            </article>
+
+            <article class="competency-row reveal">
+                <div class="competency-heading">
+                    <span>05</span>
+                    <h3 data-i18n="skills.methods">Udviklingsmetoder</h3>
+                </div>
+
+                <div class="competency-tags">
+                    <span>Git & GitHub</span>
+                    <span>OOP</span>
+                    <span>Agile / Scrum</span>
+                    <span data-i18n="skills.debugging">Debugging</span>
+                    <span data-i18n="skills.problemSolving">Problemløsning</span>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section id="projects" class="section-shell">
+        <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="projects.eyebrow">Projekter</p>
+            <h2 data-i18n="projects.title">Udvalgte projekter</h2>
+
+            <p class="section-intro" data-i18n="projects.intro">
+                Udvalgte projekter inden for softwareudvikling, databaser,
+                API-design og deployment — samt et kommende AI-projekt.
+            </p>
+        </div>
+
+        <div class="project-grid">
+
+
+            <!-- Project Calculation Tool -->
+            <article class="project-card reveal">
+                <div class="project-card-top">
+                    <span class="project-number">01</span>
+
+                    <a
+                            class="project-launch"
+                            href="https://pctool.software"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Åbn Project Calculation Tool"
+                            data-i18n-aria-label="projects.pct.openAria"
+                    >
+                        <span class="project-launch-label">Live</span>
+
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                    d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3ZM5 5h6v2H5v12h12v-6h2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"
+                            />
+                        </svg>
+                    </a>
+                </div>
+
+                <a
+                        class="project-media"
+                        href="https://pctool.software"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Åbn Project Calculation Tool"
+                        data-i18n-aria-label="projects.pct.openAria"
+                >
+                    <img
+                            src="assets/projects/pct.forside.png"
+                            alt="Forhåndsvisning af Project Calculation Tool"
+                            data-i18n-alt="projects.pct.imageAlt"
+                            loading="lazy"
+                            decoding="async"
+                    >
+
+                    <span class="project-media-action" data-i18n="projects.openProject">
           Åbn projekt
         </span>
-        </a>
+                </a>
 
-        <div class="project-stack">
-          <span>Java</span>
-          <span>Spring Boot</span>
-          <span>Thymeleaf</span>
-          <span>MySQL</span>
-        </div>
+                <div class="project-stack">
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>Thymeleaf</span>
+                    <span>MySQL</span>
+                </div>
 
-        <h3>Project Calculation Tool</h3>
+                <h3>Project Calculation Tool</h3>
 
-        <p class="project-summary" data-i18n="projects.pct.summary">
-          Projektstyringssystem med rollebaseret adgang til projekter,
-          delprojekter, medarbejdere og opgaver.
-        </p>
+                <p class="project-summary" data-i18n="projects.pct.summary">
+                    Projektstyringssystem med rollebaseret adgang til projekter,
+                    delprojekter, medarbejdere og opgaver.
+                </p>
 
-        <div class="project-features">
-          <span data-i18n="projects.pct.roleLogin">Rollebaseret login</span>
-          <span data-i18n="projects.pct.taskManagement">Opgavestyring</span>
-          <span data-i18n="projects.pct.mysqlDeployment">MySQL-deployment</span>
-        </div>
-      </article>
+                <div class="project-features">
+                    <span data-i18n="projects.pct.roleLogin">Rollebaseret login</span>
+                    <span data-i18n="projects.pct.taskManagement">Opgavestyring</span>
+                    <span data-i18n="projects.pct.mysqlDeployment">MySQL-deployment</span>
+                </div>
+            </article>
 
-      <!-- Slik Skoven -->
-      <!-- Slik Skoven -->
-      <article class="project-card reveal">
-        <div class="project-card-top">
-          <span class="project-number">02</span>
+            <!-- Slik Skoven -->
+            <article class="project-card reveal">
+                <div class="project-card-top">
+                    <span class="project-number">02</span>
 
-          <a
-                  class="project-launch"
-                  href="https://slikskoven.dk"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Åbn Slik Skoven & Is"
-                  data-i18n-aria-label="projects.slik.openAria"
-          >
-            <span class="project-launch-label">Live</span>
+                    <a
+                            class="project-launch"
+                            href="https://slikskoven.dk"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Åbn Slik Skoven & Is"
+                            data-i18n-aria-label="projects.slik.openAria"
+                    >
+                        <span class="project-launch-label">Live</span>
 
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                      d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3ZM5 5h6v2H5v12h12v-6h2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"
-              />
-            </svg>
-          </a>
-        </div>
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                    d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3ZM5 5h6v2H5v12h12v-6h2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"
+                            />
+                        </svg>
+                    </a>
+                </div>
 
-        <a
-                class="project-media"
-                href="https://slikskoven.dk"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Åbn Slik Skoven & Is"
-                data-i18n-aria-label="projects.slik.openAria"
-        >
-          <img
-                  src="assets/projects/slikskoven.forside.png"
-                  alt="Forhåndsvisning af Slik Skoven og Is"
-                  data-i18n-alt="projects.slik.imageAlt"
-                  loading="lazy"
-                  decoding="async"
-          >
+                <a
+                        class="project-media"
+                        href="https://slikskoven.dk"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Åbn Slik Skoven & Is"
+                        data-i18n-aria-label="projects.slik.openAria"
+                >
+                    <img
+                            src="assets/projects/slikskoven.forside.png"
+                            alt="Forhåndsvisning af Slik Skoven og Is"
+                            data-i18n-alt="projects.slik.imageAlt"
+                            loading="lazy"
+                            decoding="async"
+                    >
 
-          <span class="project-media-action" data-i18n="projects.openProject">
+                    <span class="project-media-action" data-i18n="projects.openProject">
       Åbn projekt
     </span>
-        </a>
+                </a>
 
-        <div class="project-stack">
-          <span>Java</span>
-          <span>JavaScript</span>
-          <span>Spring Boot</span>
-          <span>MySQL</span>
+                <div class="project-stack">
+                    <span>Java</span>
+                    <span>JavaScript</span>
+                    <span>Spring Boot</span>
+                    <span>MySQL</span>
+                </div>
+
+                <h3>Slik Skoven & Is</h3>
+
+                <p class="project-summary" data-i18n="projects.slik.summary">
+                    Webapplikation til en slikbutik med produktoversigt,
+                    nyheder, administration og bestilling af bland-selv slik.
+                </p>
+
+                <div class="project-features">
+                    <span data-i18n="projects.slik.crud">CRUD-administration</span>
+                    <span>REST API</span>
+                    <span>Docker Compose</span>
+                </div>
+            </article>
+
+
+            <!-- ScopeFlow AI -->
+            <article class="project-card project-card-upcoming reveal">
+                <div class="project-card-top">
+                    <span class="project-number">03</span>
+
+                    <span class="project-status upcoming" data-i18n="projects.upcoming">
+            Kommer snart
+          </span>
+                </div>
+
+                <div class="project-media scopeflow-preview" aria-hidden="true">
+                    <div class="scopeflow-preview-grid"></div>
+
+                    <span class="scopeflow-kicker">AI WORKFLOW</span>
+
+                    <div class="scopeflow-flow">
+            <span class="scopeflow-node" data-i18n="projects.scopeflow.input">
+              Kundebehov
+            </span>
+
+                        <span class="scopeflow-arrow">→</span>
+                        <span class="scopeflow-core">AI</span>
+                        <span class="scopeflow-arrow">→</span>
+
+                        <span class="scopeflow-node" data-i18n="projects.scopeflow.output">
+              Backlog
+            </span>
+                    </div>
+
+                    <span class="scopeflow-review" data-i18n="projects.scopeflow.review">
+            ✓ Menneskelig godkendelse
+          </span>
+                </div>
+
+                <div
+                        class="project-stack project-stack-planned"
+                        aria-label="Planlagt teknologistack"
+                        data-i18n-aria-label="projects.scopeflow.stackAria"
+                >
+                    <span class="project-stack-label" data-i18n="projects.planned">Planlagt</span>
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>Spring AI</span>
+                    <span>PostgreSQL</span>
+                </div>
+
+                <h3>ScopeFlow AI</h3>
+
+                <p class="project-summary" data-i18n="projects.scopeflow.summary">
+                    Planlagt AI-assistent, der omsætter ustrukturerede kundebehov
+                    til user stories, acceptkriterier og afklarende spørgsmål,
+                    før resultatet godkendes af et menneske.
+                </p>
+
+                <div class="project-features">
+                    <span data-i18n="projects.scopeflow.structured">Struktureret AI-output</span>
+                    <span data-i18n="projects.scopeflow.human">Human-in-the-loop</span>
+                    <span data-i18n="projects.scopeflow.requirements">Kravspecifikation</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="experience" class="section-shell">
+        <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="experience.eyebrow">Erfaring</p>
+            <h2 data-i18n="experience.title">Relevant erhvervserfaring</h2>
+
+            <p class="section-intro" data-i18n="experience.intro">
+                Mine tidligere jobs har givet mig erfaring med kundekontakt,
+                ansvar, selvstændigt arbejde og samarbejde i travle miljøer.
+            </p>
         </div>
 
-        <h3>Slik Skoven & Is</h3>
+        <div class="experience-list">
 
-        <p class="project-summary" data-i18n="projects.slik.summary">
-          Webapplikation til en slikbutik med produktoversigt,
-          nyheder, administration og bestilling af bland-selv slik.
-        </p>
+            <article class="experience-item reveal">
+                <div class="experience-period">
+                    <span data-i18n="experience.tivoli.start">Jul. 2022</span>
+                    <span>—</span>
+                    <span data-i18n="experience.tivoli.end">Jan. 2026</span>
+                </div>
 
-        <div class="project-features">
-          <span data-i18n="projects.slik.crud">CRUD-administration</span>
-          <span>REST API</span>
-          <span>Docker Compose</span>
+                <div class="experience-content">
+                    <div class="experience-topline">
+                        <div>
+                            <h3 data-i18n="experience.tivoli.role">Børnehost</h3>
+                            <p class="experience-company">
+                                Tivoli Hotel & Congress Center · Vesterbro
+                            </p>
+                        </div>
+
+                        <span class="experience-type" data-i18n="experience.seasonal">Sæsonarbejde</span>
+                    </div>
+
+                    <p class="experience-summary" data-i18n="experience.tivoli.summary">
+                        Gæsteservice og afvikling af aktiviteter i et internationalt
+                        hotelmiljø med fokus på tryghed, overblik og gode oplevelser.
+                    </p>
+
+                    <div class="experience-tags">
+                        <span data-i18n="tags.guestService">Gæsteservice</span>
+                        <span data-i18n="tags.responsibility">Ansvar</span>
+                        <span data-i18n="tags.communication">Kommunikation</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="experience-item reveal">
+                <div class="experience-period">
+                    <span data-i18n="experience.barista.start">Dec. 2024</span>
+                    <span>—</span>
+                    <span data-i18n="experience.barista.end">Okt. 2025</span>
+                </div>
+
+                <div class="experience-content">
+                    <div class="experience-topline">
+                        <div>
+                            <h3>Catering Barista</h3>
+                            <p class="experience-company">
+                                Marias Kaffebar · Nørrebro
+                            </p>
+                        </div>
+
+                        <span class="experience-type" data-i18n="experience.partTime">Deltid</span>
+                    </div>
+
+                    <p class="experience-summary" data-i18n="experience.barista.summary">
+                        Tilberedning og servering af drikkevarer, kundebetjening
+                        og håndtering af bestillinger i et travlt cafémiljø.
+                    </p>
+
+                    <div class="experience-tags">
+                        <span data-i18n="tags.service">Service</span>
+                        <span data-i18n="tags.efficiency">Effektivitet</span>
+                        <span data-i18n="tags.customerContact">Kundekontakt</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="experience-item reveal">
+                <div class="experience-period">
+                    <span data-i18n="experience.delivr.period">Sommer 2025</span>
+                </div>
+
+                <div class="experience-content">
+                    <div class="experience-topline">
+                        <div>
+                            <h3 data-i18n="experience.delivr.role">Blomster- & frugtbud</h3>
+
+                            <p class="experience-company" data-i18n="experience.delivr.company">
+                                Delivr · Transport & logistik
+                            </p>
+                        </div>
+
+                        <span class="experience-type" data-i18n="experience.summerWork">Sommerarbejde</span>
+                    </div>
+
+                    <p class="experience-summary" data-i18n="experience.delivr.summary">
+                        Planlagde og gennemførte leveringer af blomster og frugt fra
+                        virksomheder til kunder. Håndterede løbende ændringer,
+                        forsinkelser, adressefejl og andre problematikker gennem
+                        koordinering med både afsender og modtager.
+                    </p>
+
+                    <div class="experience-tags">
+                        <span data-i18n="tags.transportLogistics">Transport og logistik</span>
+                        <span data-i18n="tags.routePlanning">Ruteplanlægning</span>
+                        <span data-i18n="tags.customerContact">Kundekontakt</span>
+                        <span data-i18n="tags.problemSolving">Problemløsning</span>
+                        <span data-i18n="tags.responsibility">Ansvar</span>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="experience-item reveal">
+                <div class="experience-period">
+                    <span data-i18n="experience.bakery.start">Aug. 2024</span>
+                    <span>—</span>
+                    <span data-i18n="experience.bakery.end">Jan. 2025</span>
+                </div>
+
+                <div class="experience-content">
+                    <div class="experience-topline">
+                        <div>
+                            <h3 data-i18n="experience.bakery.role">Salgsmedarbejder</h3>
+                            <p class="experience-company">
+                                Bakery by Hermann · Jægersborg
+                            </p>
+                        </div>
+
+                        <span class="experience-type" data-i18n="experience.fullTime">Fuldtid</span>
+                    </div>
+
+                    <p class="experience-summary" data-i18n="experience.bakery.summary">
+                        Salg, kundeservice og daglig drift med fokus på kvalitet,
+                        præsentation og en god kundeoplevelse.
+                    </p>
+
+                    <div class="experience-tags">
+                        <span data-i18n="tags.sales">Salg</span>
+                        <span data-i18n="tags.customerService">Kundeservice</span>
+                        <span data-i18n="tags.dailyOperations">Daglig drift</span>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="experience-item reveal">
+                <div class="experience-period">
+                    <span data-i18n="experience.coop.start">Jun. 2021</span>
+                    <span>—</span>
+                    <span data-i18n="experience.coop.end">Jun. 2022</span>
+                </div>
+
+                <div class="experience-content">
+                    <div class="experience-topline">
+                        <div>
+                            <h3 data-i18n="experience.coop.role">Salgs- og servicemedarbejder</h3>
+                            <p class="experience-company">
+                                Fakta / Coop 365 Discount · Espergærde
+                            </p>
+                        </div>
+
+                        <span class="experience-type" data-i18n="experience.partTime">Deltid</span>
+                    </div>
+
+                    <p class="experience-summary" data-i18n="experience.coop.summary">
+                        Kundebetjening, vareopfyldning og praktiske opgaver
+                        i den daglige butiksdrift.
+                    </p>
+
+                    <div class="experience-tags">
+                        <span data-i18n="tags.storeOperations">Butiksdrift</span>
+                        <span data-i18n="tags.collaboration">Samarbejde</span>
+                        <span data-i18n="tags.structure">Struktur</span>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="experience-item reveal">
+                <div class="experience-period">
+                    2020
+                    <span>—</span>
+                    2021
+                </div>
+
+                <div class="experience-content">
+                    <div class="experience-topline">
+                        <div>
+                            <h3 data-i18n="experience.meny.role">Butiksmedarbejder</h3>
+                            <p class="experience-company">MENY · Espergærde</p>
+                        </div>
+                    </div>
+
+                    <p class="experience-summary" data-i18n="experience.meny.summary">
+                        Kundeservice, varehåndtering og understøttelse af den
+                        daglige drift i butikken.
+                    </p>
+
+                    <div class="experience-tags">
+                        <span data-i18n="tags.customerService">Kundeservice</span>
+                        <span data-i18n="tags.merchandiseHandling">Varehåndtering</span>
+                        <span data-i18n="tags.teamwork">Teamwork</span>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="experience-item reveal">
+                <div class="experience-period">
+                    2019
+                    <span>—</span>
+                    2020
+                </div>
+
+                <div class="experience-content">
+                    <div class="experience-topline">
+                        <div>
+                            <h3 data-i18n="experience.distributor.role">Omdeler</h3>
+                            <p class="experience-company">Helsingør Dagblad</p>
+                        </div>
+                    </div>
+
+                    <p class="experience-summary" data-i18n="experience.helsingor.summary">
+                        Selvstændig planlægning og levering inden for faste
+                        tidsfrister og kvalitetskrav.
+                    </p>
+
+                    <div class="experience-tags">
+                        <span data-i18n="tags.independence">Selvstændighed</span>
+                        <span data-i18n="tags.punctuality">Punktlighed</span>
+                        <span data-i18n="tags.planning">Planlægning</span>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="experience-item reveal">
+                <div class="experience-period">
+                    2018
+                    <span>—</span>
+                    2019
+                </div>
+
+                <div class="experience-content">
+                    <div class="experience-topline">
+                        <div>
+                            <h3 data-i18n="experience.distributor.role">Omdeler</h3>
+                            <p class="experience-company">Bliv.omdeler.nu</p>
+                        </div>
+                    </div>
+
+                    <p class="experience-summary" data-i18n="experience.distributor.summary">
+                        Ansvar for selvstændig omdeling og gennemførelse
+                        af arbejdet inden for aftalte tidsrammer.
+                    </p>
+
+                    <div class="experience-tags">
+                        <span data-i18n="tags.responsibility">Ansvar</span>
+                        <span data-i18n="tags.discipline">Disciplin</span>
+                        <span data-i18n="tags.independentWork">Selvstændigt arbejde</span>
+                    </div>
+                </div>
+            </article>
+
         </div>
-      </article>
+    </section>
 
-    </div>
-  </section>
-
-  <section id="experience" class="section-shell">
-    <div class="section-heading reveal">
-      <p class="eyebrow" data-i18n="experience.eyebrow">Erfaring</p>
-      <h2 data-i18n="experience.title">Relevant erhvervserfaring</h2>
-
-      <p class="section-intro" data-i18n="experience.intro">
-        Mine tidligere jobs har givet mig erfaring med kundekontakt,
-        ansvar, selvstændigt arbejde og samarbejde i travle miljøer.
-      </p>
-    </div>
-
-    <div class="experience-list">
-
-      <article class="experience-item reveal">
-        <div class="experience-period">
-          <span data-i18n="experience.tivoli.start">Jul. 2022</span>
-          <span>—</span>
-          <span data-i18n="experience.tivoli.end">Jan. 2026</span>
+    <section id="education" class="section-shell">
+        <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="education.eyebrow">Uddannelse</p>
         </div>
 
-        <div class="experience-content">
-          <div class="experience-topline">
-            <div>
-              <h3 data-i18n="experience.tivoli.role">Børnehost</h3>
-              <p class="experience-company">
-                Tivoli Hotel & Congress Center · Vesterbro
-              </p>
+        <article class="education-card reveal">
+
+            <div class="education-header">
+                <div>
+                    <p class="education-type" data-i18n="education.type">Erhvervsakademiuddannelse · 150 ECTS</p>
+                    <h3 data-i18n="education.program">Datamatiker</h3>
+                    <p class="education-school" data-i18n="education.school">
+                        Erhvervsakademi København — EK
+                    </p>
+                </div>
+
+                <div class="education-period" data-i18n="education.period">
+                    Januar 2025 — Juni 2027
+                </div>
             </div>
 
-            <span class="experience-type" data-i18n="experience.seasonal">Sæsonarbejde</span>
-          </div>
-
-          <p class="experience-summary" data-i18n="experience.tivoli.summary">
-            Gæsteservice og afvikling af aktiviteter i et internationalt
-            hotelmiljø med fokus på tryghed, overblik og gode oplevelser.
-          </p>
-
-          <div class="experience-tags">
-            <span data-i18n="tags.guestService">Gæsteservice</span>
-            <span data-i18n="tags.responsibility">Ansvar</span>
-            <span data-i18n="tags.communication">Kommunikation</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="experience-item reveal">
-        <div class="experience-period">
-          <span data-i18n="experience.barista.start">Dec. 2024</span>
-          <span>—</span>
-          <span data-i18n="experience.barista.end">Okt. 2025</span>
-        </div>
-
-        <div class="experience-content">
-          <div class="experience-topline">
-            <div>
-              <h3>Catering Barista</h3>
-              <p class="experience-company">
-                Marias Kaffebar · Nørrebro
-              </p>
-            </div>
-
-            <span class="experience-type" data-i18n="experience.partTime">Deltid</span>
-          </div>
-
-          <p class="experience-summary" data-i18n="experience.barista.summary">
-            Tilberedning og servering af drikkevarer, kundebetjening
-            og håndtering af bestillinger i et travlt cafémiljø.
-          </p>
-
-          <div class="experience-tags">
-            <span data-i18n="tags.service">Service</span>
-            <span data-i18n="tags.efficiency">Effektivitet</span>
-            <span data-i18n="tags.customerContact">Kundekontakt</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="experience-item reveal">
-        <div class="experience-period">
-          <span data-i18n="experience.delivr.period">Sommer 2025</span>
-        </div>
-
-        <div class="experience-content">
-          <div class="experience-topline">
-            <div>
-              <h3 data-i18n="experience.delivr.role">Blomster- & frugtbud</h3>
-
-              <p class="experience-company" data-i18n="experience.delivr.company">
-                Delivr · Transport & logistik
-              </p>
-            </div>
-
-            <span class="experience-type" data-i18n="experience.summerWork">Sommerarbejde</span>
-          </div>
-
-          <p class="experience-summary" data-i18n="experience.delivr.summary">
-            Planlagde og gennemførte leveringer af blomster og frugt fra
-            virksomheder til kunder. Håndterede løbende ændringer,
-            forsinkelser, adressefejl og andre problematikker gennem
-            koordinering med både afsender og modtager.
-          </p>
-
-          <div class="experience-tags">
-            <span data-i18n="tags.transportLogistics">Transport og logistik</span>
-            <span data-i18n="tags.routePlanning">Ruteplanlægning</span>
-            <span data-i18n="tags.customerContact">Kundekontakt</span>
-            <span data-i18n="tags.problemSolving">Problemløsning</span>
-            <span data-i18n="tags.responsibility">Ansvar</span>
-          </div>
-        </div>
-      </article>
-
-
-      <article class="experience-item reveal">
-        <div class="experience-period">
-          <span data-i18n="experience.bakery.start">Aug. 2024</span>
-          <span>—</span>
-          <span data-i18n="experience.bakery.end">Jan. 2025</span>
-        </div>
-
-        <div class="experience-content">
-          <div class="experience-topline">
-            <div>
-              <h3 data-i18n="experience.bakery.role">Salgsmedarbejder</h3>
-              <p class="experience-company">
-                Bakery by Hermann · Jægersborg
-              </p>
-            </div>
-
-            <span class="experience-type" data-i18n="experience.fullTime">Fuldtid</span>
-          </div>
-
-          <p class="experience-summary" data-i18n="experience.bakery.summary">
-            Salg, kundeservice og daglig drift med fokus på kvalitet,
-            præsentation og en god kundeoplevelse.
-          </p>
-
-          <div class="experience-tags">
-            <span data-i18n="tags.sales">Salg</span>
-            <span data-i18n="tags.customerService">Kundeservice</span>
-            <span data-i18n="tags.dailyOperations">Daglig drift</span>
-          </div>
-        </div>
-      </article>
-
-
-      <article class="experience-item reveal">
-        <div class="experience-period">
-          <span data-i18n="experience.coop.start">Jun. 2021</span>
-          <span>—</span>
-          <span data-i18n="experience.coop.end">Jun. 2022</span>
-        </div>
-
-        <div class="experience-content">
-          <div class="experience-topline">
-            <div>
-              <h3 data-i18n="experience.coop.role">Salgs- og servicemedarbejder</h3>
-              <p class="experience-company">
-                Fakta / Coop 365 Discount · Espergærde
-              </p>
-            </div>
-
-            <span class="experience-type" data-i18n="experience.partTime">Deltid</span>
-          </div>
-
-          <p class="experience-summary" data-i18n="experience.coop.summary">
-            Kundebetjening, vareopfyldning og praktiske opgaver
-            i den daglige butiksdrift.
-          </p>
-
-          <div class="experience-tags">
-            <span data-i18n="tags.storeOperations">Butiksdrift</span>
-            <span data-i18n="tags.collaboration">Samarbejde</span>
-            <span data-i18n="tags.structure">Struktur</span>
-          </div>
-        </div>
-      </article>
-
-
-      <article class="experience-item reveal">
-        <div class="experience-period">
-          2020
-          <span>—</span>
-          2021
-        </div>
-
-        <div class="experience-content">
-          <div class="experience-topline">
-            <div>
-              <h3 data-i18n="experience.meny.role">Butiksmedarbejder</h3>
-              <p class="experience-company">MENY · Espergærde</p>
-            </div>
-          </div>
-
-          <p class="experience-summary" data-i18n="experience.meny.summary">
-            Kundeservice, varehåndtering og understøttelse af den
-            daglige drift i butikken.
-          </p>
-
-          <div class="experience-tags">
-            <span data-i18n="tags.customerService">Kundeservice</span>
-            <span data-i18n="tags.merchandiseHandling">Varehåndtering</span>
-            <span data-i18n="tags.teamwork">Teamwork</span>
-          </div>
-        </div>
-      </article>
-
-
-      <article class="experience-item reveal">
-        <div class="experience-period">
-          2019
-          <span>—</span>
-          2020
-        </div>
-
-        <div class="experience-content">
-          <div class="experience-topline">
-            <div>
-              <h3 data-i18n="experience.distributor.role">Omdeler</h3>
-              <p class="experience-company">Helsingør Dagblad</p>
-            </div>
-          </div>
-
-          <p class="experience-summary" data-i18n="experience.helsingor.summary">
-            Selvstændig planlægning og levering inden for faste
-            tidsfrister og kvalitetskrav.
-          </p>
-
-          <div class="experience-tags">
-            <span data-i18n="tags.independence">Selvstændighed</span>
-            <span data-i18n="tags.punctuality">Punktlighed</span>
-            <span data-i18n="tags.planning">Planlægning</span>
-          </div>
-        </div>
-      </article>
-
-
-      <article class="experience-item reveal">
-        <div class="experience-period">
-          2018
-          <span>—</span>
-          2019
-        </div>
-
-        <div class="experience-content">
-          <div class="experience-topline">
-            <div>
-              <h3 data-i18n="experience.distributor.role">Omdeler</h3>
-              <p class="experience-company">Bliv.omdeler.nu</p>
-            </div>
-          </div>
-
-          <p class="experience-summary" data-i18n="experience.distributor.summary">
-            Ansvar for selvstændig omdeling og gennemførelse
-            af arbejdet inden for aftalte tidsrammer.
-          </p>
-
-          <div class="experience-tags">
-            <span data-i18n="tags.responsibility">Ansvar</span>
-            <span data-i18n="tags.discipline">Disciplin</span>
-            <span data-i18n="tags.independentWork">Selvstændigt arbejde</span>
-          </div>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
-  <section id="education" class="section-shell">
-    <div class="section-heading reveal">
-      <p class="eyebrow" data-i18n="education.eyebrow">Uddannelse</p>
-    </div>
-
-    <article class="education-card reveal">
-
-      <div class="education-header">
-        <div>
-          <p class="education-type" data-i18n="education.type">Erhvervsakademiuddannelse · 150 ECTS</p>
-          <h3 data-i18n="education.program">Datamatiker</h3>
-          <p class="education-school" data-i18n="education.school">
-            Erhvervsakademi København — EK
-          </p>
-        </div>
-
-        <div class="education-period" data-i18n="education.period">
-          Januar 2025 — Juni 2027
-        </div>
-      </div>
-
-      <p class="education-description" data-i18n="education.description">
-        Uddannelsen fokuserer på softwareudvikling, programmering,
-        databaser, systemudvikling og udvikling af full-stack
-        applikationer gennem praksisnære projekter.
-      </p>
-
-      <div class="education-foundation">
-        <h4 data-i18n="education.foundation">Fagligt fundament</h4>
-
-        <div class="competency-tags">
-          <span>Java & OOP</span>
-          <span>Spring Boot</span>
-          <span>REST APIs</span>
-          <span data-i18n="education.sqlDatabases">SQL & databaser</span>
-          <span data-i18n="education.fullStack">Full-stack udvikling</span>
-          <span data-i18n="education.systemDesign">Systemdesign</span>
-          <span>Agile / Scrum</span>
-          <span>Docker</span>
-        </div>
-      </div>
-
-      <div class="course-focus">
-        <div class="course-focus-heading">
-          <p class="eyebrow" data-i18n="education.fourthSemester">4. semester</p>
-          <h4 data-i18n="education.upcomingFocus">Kommende fagligt fokus</h4>
-        </div>
-
-        <div class="course-focus-grid">
-
-          <article class="course-card">
-            <div class="course-topline">
-              <h5 data-i18n="education.ai.title">AI-agenter & automatisering</h5>
-              <span class="course-status" data-i18n="education.upcoming">Kommende</span>
-            </div>
-
-            <p data-i18n="education.ai.description">
-              Design af AI-agenter og automatiserede workflows,
-              der kan udføre dele af arbejdsprocesser.
+            <p class="education-description" data-i18n="education.description">
+                Uddannelsen fokuserer på softwareudvikling, programmering,
+                databaser, systemudvikling og udvikling af full-stack
+                applikationer gennem praksisnære projekter.
             </p>
 
-            <ul>
-              <li data-i18n="education.ai.item1">Workflow-automatisering med n8n</li>
-              <li data-i18n="education.ai.item2">Prompt engineering og valg af LLM</li>
-              <li data-i18n="education.ai.item3">RAG og vektordatabaser</li>
-              <li data-i18n="education.ai.item4">Test og optimering af AI-agenter</li>
-            </ul>
-          </article>
+            <div class="education-foundation">
+                <h4 data-i18n="education.foundation">Fagligt fundament</h4>
 
-          <article class="course-card">
-            <div class="course-topline">
-              <h5>DevOps</h5>
-              <span class="course-status" data-i18n="education.upcoming">Kommende</span>
+                <div class="competency-tags">
+                    <span>Java & OOP</span>
+                    <span>Spring Boot</span>
+                    <span>REST APIs</span>
+                    <span data-i18n="education.sqlDatabases">SQL & databaser</span>
+                    <span data-i18n="education.fullStack">Full-stack udvikling</span>
+                    <span data-i18n="education.systemDesign">Systemdesign</span>
+                    <span>Agile / Scrum</span>
+                    <span>Docker</span>
+                </div>
             </div>
 
-            <p data-i18n="education.devops.description">
-              Udvikling, deployment og drift af systemer gennem
-              automatiserede og reproducerbare processer.
-            </p>
+            <div class="course-focus">
+                <div class="course-focus-heading">
+                    <p class="eyebrow" data-i18n="education.fourthSemester">4. semester</p>
+                    <h4 data-i18n="education.upcomingFocus">Kommende fagligt fokus</h4>
+                </div>
 
-            <ul>
-              <li data-i18n="education.devops.item1">CI/CD-pipelines</li>
-              <li data-i18n="education.devops.item2">Containerteknologier og Infrastructure as Code</li>
-              <li data-i18n="education.devops.item3">Deployment, skalering og monitorering</li>
-              <li data-i18n="education.devops.item4">Produktion, fejlfinding og sikkerhed</li>
-            </ul>
-          </article>
+                <div class="course-focus-grid">
 
-          <article class="course-card">
-            <div class="course-topline">
-              <h5>Python</h5>
-              <span class="course-status" data-i18n="education.upcoming">Kommende</span>
+                    <article class="course-card">
+                        <div class="course-topline">
+                            <h5 data-i18n="education.ai.title">AI-agenter & automatisering</h5>
+                            <span class="course-status" data-i18n="education.upcoming">Kommende</span>
+                        </div>
+
+                        <p data-i18n="education.ai.description">
+                            Design af AI-agenter og automatiserede workflows,
+                            der kan udføre dele af arbejdsprocesser.
+                        </p>
+
+                        <ul>
+                            <li data-i18n="education.ai.item1">Workflow-automatisering med n8n</li>
+                            <li data-i18n="education.ai.item2">Prompt engineering og valg af LLM</li>
+                            <li data-i18n="education.ai.item3">RAG og vektordatabaser</li>
+                            <li data-i18n="education.ai.item4">Test og optimering af AI-agenter</li>
+                        </ul>
+                    </article>
+
+                    <article class="course-card">
+                        <div class="course-topline">
+                            <h5>DevOps</h5>
+                            <span class="course-status" data-i18n="education.upcoming">Kommende</span>
+                        </div>
+
+                        <p data-i18n="education.devops.description">
+                            Udvikling, deployment og drift af systemer gennem
+                            automatiserede og reproducerbare processer.
+                        </p>
+
+                        <ul>
+                            <li data-i18n="education.devops.item1">CI/CD-pipelines</li>
+                            <li data-i18n="education.devops.item2">Containerteknologier og Infrastructure as Code</li>
+                            <li data-i18n="education.devops.item3">Deployment, skalering og monitorering</li>
+                            <li data-i18n="education.devops.item4">Produktion, fejlfinding og sikkerhed</li>
+                        </ul>
+                    </article>
+
+                    <article class="course-card">
+                        <div class="course-topline">
+                            <h5>Python</h5>
+                            <span class="course-status" data-i18n="education.upcoming">Kommende</span>
+                        </div>
+
+                        <p data-i18n="education.python.description">
+                            Python til scripting, problemløsning, automatisering,
+                            dataanalyse & integration med AI-modeller.
+                        </p>
+
+                        <ul>
+                            <li data-i18n="education.python.item1">Pythonic programmering</li>
+                            <li data-i18n="education.python.item2">Jupyter Notebooks</li>
+                            <li data-i18n="education.python.item3">NumPy, pandas og matplotlib</li>
+                            <li data-i18n="education.python.item4">LLM-integration og debugging</li>
+                        </ul>
+                    </article>
+
+                </div>
             </div>
 
-            <p data-i18n="education.python.description">
-              Python til scripting, problemløsning, automatisering,
-              dataanalyse & integration med AI-modeller.
+        </article>
+    </section>
+
+    <section class="section-shell value-section">
+        <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="value.eyebrow">Hvorfor mig?</p>
+            <h2 data-i18n="value.title">Hvad jeg tager med på arbejdspladsen</h2>
+        </div>
+
+        <div class="value-grid">
+            <article class="value-card reveal">
+                <h3 data-i18n="value.explain.title">Jeg kan forklare min kode</h3>
+                <p data-i18n="value.explain.text">Jeg arbejder ikke kun for at få koden til at køre. Jeg vil forstå hvorfor den virker.</p>
+            </article>
+
+            <article class="value-card reveal">
+                <h3 data-i18n="value.learn.title">Jeg lærer hurtigt</h3>
+                <p data-i18n="value.learn.text">Når jeg møder fejl, bruger jeg dem til at forstå frameworks, dataflow og systemdesign bedre.</p>
+            </article>
+
+            <article class="value-card reveal">
+                <h3 data-i18n="value.products.title">Jeg tænker i produkter</h3>
+                <p data-i18n="value.products.text">Jeg prøver at forbinde tekniske valg med brugerens behov og virksomhedens mål.</p>
+            </article>
+
+            <article class="value-card reveal">
+                <h3 data-i18n="value.team.title">Ikke kun bag skærmen</h3>
+                <p data-i18n="value.team.text">
+                    Jeg kan godt lide at fordybe mig i kode, men jeg kan lige så godt lide
+                    den almindelige del af en arbejdsplads — at snakke med kollegaer,
+                    samarbejde og være en del af miljøet omkring mig.
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+    <section id="contact" class="section-shell contact-section reveal">
+        <div class="contact-heading">
+            <p class="eyebrow" data-i18n="contact.eyebrow">Kontakt</p>
+
+            <h2 data-i18n="contact.title">Lad os tage en snak</h2>
+
+            <p class="section-intro" data-i18n="contact.intro">
+                Har du et relevant studiejob, en praktikmulighed eller et projekt,
+                hvor mine kompetencer kan skabe værdi, er du velkommen til at kontakte mig.
             </p>
-
-            <ul>
-              <li data-i18n="education.python.item1">Pythonic programmering</li>
-              <li data-i18n="education.python.item2">Jupyter Notebooks</li>
-              <li data-i18n="education.python.item3">NumPy, pandas og matplotlib</li>
-              <li data-i18n="education.python.item4">LLM-integration og debugging</li>
-            </ul>
-          </article>
-
-        </div>
-      </div>
-
-    </article>
-  </section>
-
-  <section class="section-shell value-section">
-    <div class="section-heading reveal">
-      <p class="eyebrow" data-i18n="value.eyebrow">Hvorfor mig?</p>
-      <h2 data-i18n="value.title">Hvad jeg tager med på arbejdspladsen</h2>
-    </div>
-
-    <div class="value-grid">
-      <article class="value-card reveal">
-        <h3 data-i18n="value.explain.title">Jeg kan forklare min kode</h3>
-        <p data-i18n="value.explain.text">Jeg arbejder ikke kun for at få koden til at køre. Jeg vil forstå hvorfor den virker.</p>
-      </article>
-
-      <article class="value-card reveal">
-        <h3 data-i18n="value.learn.title">Jeg lærer hurtigt</h3>
-        <p data-i18n="value.learn.text">Når jeg møder fejl, bruger jeg dem til at forstå frameworks, dataflow og systemdesign bedre.</p>
-      </article>
-
-      <article class="value-card reveal">
-        <h3 data-i18n="value.products.title">Jeg tænker i produkter</h3>
-        <p data-i18n="value.products.text">Jeg prøver at forbinde tekniske valg med brugerens behov og virksomhedens mål.</p>
-      </article>
-
-      <article class="value-card reveal">
-        <h3 data-i18n="value.team.title">Ikke kun bag skærmen</h3>
-        <p data-i18n="value.team.text">
-          Jeg kan godt lide at fordybe mig i kode, men jeg kan lige så godt lide
-          den almindelige del af en arbejdsplads — at snakke med kollegaer,
-          samarbejde og være en del af miljøet omkring mig.
-        </p>
-      </article>
-
-    </div>
-  </section>
-
-  <section id="contact" class="section-shell contact-section reveal">
-    <div class="contact-heading">
-      <p class="eyebrow" data-i18n="contact.eyebrow">Kontakt</p>
-
-      <h2 data-i18n="contact.title">Lad os tage en snak</h2>
-
-      <p class="section-intro" data-i18n="contact.intro">
-        Har du et relevant studiejob, en praktikmulighed eller et projekt,
-        hvor mine kompetencer kan skabe værdi, er du velkommen til at kontakte mig.
-      </p>
-    </div>
-
-    <div class="contact-links-grid">
-
-      <div class="contact-link-card contact-email-card">
-        <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path
-                  d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v.5l9 5.6 9-5.6V7H3Zm18 10V9.85l-8.47 5.27a1 1 0 0 1-1.06 0L3 9.85V17h18Z"
-          />
-        </svg>
-
-        <div class="contact-link-copy">
-          <span class="contact-link-label">Email</span>
-
-          <a class="contact-email-address" href="mailto:aal.jamour9@gmail.com">
-            <span class="email-local">aal.jamour9@gmail.com</span>
-          </a>
         </div>
 
-        <button class="contact-copy-button" id="copyEmail" type="button" data-i18n="contact.copy">
-          Kopiér
-        </button>
-      </div>
+        <div class="contact-links-grid">
 
-      <a
-              class="contact-link-card"
-              href="https://github.com/aljamour"
-              target="_blank"
-              rel="noopener noreferrer"
-      >
-        <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path
-                  d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.36 9.36 0 0 1 12 6.99c.85 0 1.7.12 2.5.35 1.9-1.33 2.74-1.05 2.74-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9v2.77c0 .27.18.6.69.49A10.05 10.05 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"
-          />
-        </svg>
+            <div class="contact-link-card contact-email-card">
+                <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                            d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v.5l9 5.6 9-5.6V7H3Zm18 10V9.85l-8.47 5.27a1 1 0 0 1-1.06 0L3 9.85V17h18Z"
+                    />
+                </svg>
 
-        <div class="contact-link-copy">
-          <span class="contact-link-label" data-i18n="contact.codeProjects">Kode & projekter</span>
-          <strong>GitHub</strong>
+                <div class="contact-link-copy">
+                    <span class="contact-link-label">Email</span>
+
+                    <a class="contact-email-address" href="mailto:aal.jamour9@gmail.com">
+                        <span class="email-local">aal.jamour9@gmail.com</span>
+                    </a>
+                </div>
+
+                <button class="contact-copy-button" id="copyEmail" type="button" data-i18n="contact.copy">
+                    Kopiér
+                </button>
+            </div>
+
+            <a
+                    class="contact-link-card"
+                    href="https://github.com/aljamour"
+                    target="_blank"
+                    rel="noopener noreferrer"
+            >
+                <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                            d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.36 9.36 0 0 1 12 6.99c.85 0 1.7.12 2.5.35 1.9-1.33 2.74-1.05 2.74-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9v2.77c0 .27.18.6.69.49A10.05 10.05 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"
+                    />
+                </svg>
+
+                <div class="contact-link-copy">
+                    <span class="contact-link-label" data-i18n="contact.codeProjects">Kode & projekter</span>
+                    <strong>GitHub</strong>
+                </div>
+
+                <span class="contact-arrow">↗</span>
+            </a>
+
+            <a
+                    class="contact-link-card"
+                    href="https://www.linkedin.com/in/alan-al-jamour-a83b52352/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+            >
+                <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                            d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5ZM.35 8h4.3v14h-4.3V8Zm7.15 0h4.12v1.9h.06c.57-1.08 1.98-2.22 4.08-2.22 4.36 0 5.17 2.87 5.17 6.6V22h-4.3v-6.84c0-1.63-.03-3.73-2.27-3.73-2.28 0-2.63 1.78-2.63 3.61V22H7.5V8Z"
+                    />
+                </svg>
+
+                <div class="contact-link-copy">
+                    <span class="contact-link-label" data-i18n="contact.professionalProfile">Professionel profil</span>
+                    <strong>LinkedIn</strong>
+                </div>
+
+                <span class="contact-arrow">↗</span>
+            </a>
+
         </div>
 
-        <span class="contact-arrow">↗</span>
-      </a>
-
-      <a
-              class="contact-link-card"
-              href="https://www.linkedin.com/in/alan-al-jamour-a83b52352/"
-              target="_blank"
-              rel="noopener noreferrer"
-      >
-        <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path
-                  d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5ZM.35 8h4.3v14h-4.3V8Zm7.15 0h4.12v1.9h.06c.57-1.08 1.98-2.22 4.08-2.22 4.36 0 5.17 2.87 5.17 6.6V22h-4.3v-6.84c0-1.63-.03-3.73-2.27-3.73-2.28 0-2.63 1.78-2.63 3.61V22H7.5V8Z"
-          />
-        </svg>
-
-        <div class="contact-link-copy">
-          <span class="contact-link-label" data-i18n="contact.professionalProfile">Professionel profil</span>
-          <strong>LinkedIn</strong>
-        </div>
-
-        <span class="contact-arrow">↗</span>
-      </a>
-
-    </div>
-
-    <p id="copyStatus" role="status" aria-live="polite"></p>
-  </section>
+        <p id="copyStatus" role="status" aria-live="polite"></p>
+    </section>
 </main>
 
 <footer class="site-footer">
-  <a href="#top" data-i18n="footer.toTop">Til toppen ↑</a>
+    <a href="#top" data-i18n="footer.toTop">Til toppen ↑</a>
 </footer>
 
 <script src="translations.js"></script>

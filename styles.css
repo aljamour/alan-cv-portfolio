@@ -1186,6 +1186,129 @@ a.project-media:focus-visible {
   outline-offset: 4px;
 }
 
+/* ScopeFlow AI placeholder */
+
+.project-stack-planned .project-stack-label {
+  color: var(--accent);
+  font-weight: 900;
+}
+
+.scopeflow-preview {
+  padding: 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  color: var(--text);
+  background:
+          radial-gradient(
+                  circle at 50% 48%,
+                  rgba(71, 245, 167, 0.18),
+                  transparent 34%
+          ),
+          linear-gradient(
+                  135deg,
+                  rgba(71, 245, 167, 0.08),
+                  rgba(119, 217, 255, 0.08)
+          );
+}
+
+.scopeflow-preview > * {
+  position: relative;
+  z-index: 2;
+}
+
+.scopeflow-preview-grid {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+
+  background-image:
+          linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+[data-theme="light"] .scopeflow-preview-grid {
+  background-image:
+          linear-gradient(rgba(7, 19, 15, 0.055) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(7, 19, 15, 0.055) 1px, transparent 1px);
+}
+
+.scopeflow-kicker {
+  color: var(--accent);
+
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+}
+
+.scopeflow-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.scopeflow-node {
+  min-height: 32px;
+  padding: 0 9px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel-strong);
+
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.scopeflow-core {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+
+  display: inline-grid;
+  place-items: center;
+
+  color: #06140f;
+  border-radius: 50%;
+  background:
+          linear-gradient(
+                  135deg,
+                  var(--accent),
+                  var(--accent-2)
+          );
+
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 900;
+
+  box-shadow:
+          0 0 0 7px rgba(71, 245, 167, 0.08);
+}
+
+.scopeflow-arrow {
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-weight: 900;
+}
+
+.scopeflow-review {
+  align-self: flex-end;
+
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 800;
+}
+
 
 /* =========================================================
    10. Experience
