@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title data-i18n="meta.title">Alan Al-Jamour | Software Developer Portfolio</title>
+  <title data-i18n="meta.title">Alan Al-Jamour | Portfolio</title>
   <meta name="description" data-i18n-content="meta.description" content="Portfolio og CV for Alan Al-Jamour – datamatikerstuderende med fokus på Java, Spring Boot, REST APIs, SQL, Docker, virtuelle maskiner, Linux-serverdrift og full-stack webudvikling.">
   <meta name="theme-color" content="#07130f" />
   <link rel="icon" type="image/jpeg" href="assets/ninja.jpg">
@@ -390,16 +390,37 @@
       </article>
 
       <!-- Slik Skoven -->
+      <!-- Slik Skoven -->
       <article class="project-card reveal">
         <div class="project-card-top">
           <span class="project-number">02</span>
 
-          <span class="project-status upcoming" data-i18n="projects.upcoming">
-          Kommer snart
-        </span>
+          <a
+                  class="project-launch"
+                  href="https://slikskoven.dk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Åbn Slik Skoven & Is"
+                  data-i18n-aria-label="projects.slik.openAria"
+          >
+            <span class="project-launch-label">Live</span>
+
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                      d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3ZM5 5h6v2H5v12h12v-6h2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"
+              />
+            </svg>
+          </a>
         </div>
 
-        <div class="project-media">
+        <a
+                class="project-media"
+                href="https://slikskoven.dk"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Åbn Slik Skoven & Is"
+                data-i18n-aria-label="projects.slik.openAria"
+        >
           <img
                   src="assets/projects/slikskoven.forside.png"
                   alt="Forhåndsvisning af Slik Skoven og Is"
@@ -407,7 +428,11 @@
                   loading="lazy"
                   decoding="async"
           >
-        </div>
+
+          <span class="project-media-action" data-i18n="projects.openProject">
+      Åbn projekt
+    </span>
+        </a>
 
         <div class="project-stack">
           <span>Java</span>
