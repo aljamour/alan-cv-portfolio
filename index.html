@@ -100,12 +100,44 @@
                 <span class="gradient-text" data-i18n="hero.titleAccent">praktisk.</span>
             </h1>
 
-            <p class="hero-lead" data-i18n="hero.lead">
-                Navnet er Al-Jamour... Alan Al-Jamour, en nysgerrig softwareudvikler med fokus på Java,
-                Spring Boot, REST APIs, databaser, Docker og moderne webapplikationer med voksende interesse
-                for AI-agenter og automatisering samt IT-sikkerhed.
-                Jeg går et spadestik dybere for at forstå, hvordan teknologien hænger sammen.
-            </p>
+            <div
+                    class="hero-narrative"
+                    aria-label="Mit tekniske arbejdsflow"
+                    data-i18n-aria-label="hero.flowAria"
+            >
+                <p class="hero-hook" data-i18n="hero.hook">
+                    Fra et uklart behov til et system, der faktisk kører.
+                </p>
+
+                <div class="hero-flow" aria-hidden="true">
+                    <span data-i18n="hero.flow.need">Behov</span>
+                    <i>→</i>
+                    <span>Java / Spring</span>
+                    <i>→</i>
+                    <span>REST / SQL</span>
+                    <i>→</i>
+                    <span data-i18n="hero.flow.interface">Brugerflade</span>
+                    <i>→</i>
+                    <span data-i18n="hero.flow.operations">Drift</span>
+                </div>
+
+                <p class="hero-proof" data-i18n="hero.proof">
+                    Jeg omsætter behov til strukturerede backend-løsninger i Java og
+                    Spring Boot, forbinder dem med REST APIs og relationelle databaser
+                    og fører dem helt ud i drift med Docker, Linux, Nginx og HTTPS.
+                    Jeg arbejder også full-stack, så teknikken hænger sammen med den
+                    oplevelse, brugeren møder.
+                </p>
+
+                <p class="hero-next">
+                    <span data-i18n="hero.nextLabel">Næste faglige lag</span>
+
+                    <span data-i18n="hero.next">
+            AI-agenter, automatisering og IT-sikkerhed — teknologier jeg
+            vil forstå, afprøve og kunne forklare, ikke bare nævne.
+        </span>
+                </p>
+            </div>
 
             <div class="hero-actions">
                 <a class="btn primary" href="#projects" data-i18n="hero.projectsButton">Se mine projekter</a>
@@ -169,26 +201,6 @@
             <h2 data-i18n="about.title">Hvordan jeg arbejder</h2>
         </div>
 
-        <div class="about-card reveal">
-            <p data-i18n="about.intro1">
-                Jeg valgte softwareudvikling, fordi det tvinger mig til at tænke struktureret,
-                kreativt og løsningsorienteret samt skabe værdi for mennesker. Jeg bliver motiveret af problemer, hvor man ikke
-                bare kan kopiere en løsning, men skal forstå systemet bag.
-            </p>
-            <p data-i18n="about.intro2">
-                Mine projekter har især givet mig erfaring med backend, API-design,
-                relationelle databaser, frontend-integration, Docker, Git, Linux,
-                virtuelle maskiner & serverdrift. Jeg har blandt andet deployet en
-                Docker-baseret Spring Boot-applikation med MySQL på en Ubuntu-server
-                ved hjælp af SSH, Nginx, eget domæne & HTTPS.
-            </p>
-
-            <p data-i18n="about.intro3">
-                Jeg prøver at skrive kode, der ikke kun virker, men også kan læses,
-                udvides og forklares.
-            </p>
-        </div>
-
         <div class="principles reveal">
             <article>
                 <span>01</span>
@@ -225,7 +237,6 @@
 
             <article class="competency-row reveal">
                 <div class="competency-heading">
-                    <span>01</span>
                     <h3 data-i18n="skills.programming">Programmering</h3>
                 </div>
 
@@ -239,7 +250,6 @@
 
             <article class="competency-row reveal">
                 <div class="competency-heading">
-                    <span>02</span>
                     <h3 data-i18n="skills.backend">Backend & web</h3>
                 </div>
 
@@ -256,7 +266,6 @@
 
             <article class="competency-row reveal">
                 <div class="competency-heading">
-                    <span>03</span>
                     <h3 data-i18n="skills.database">Database & data</h3>
                 </div>
 
@@ -272,7 +281,6 @@
 
             <article class="competency-row reveal">
                 <div class="competency-heading">
-                    <span>04</span>
                     <h3 data-i18n="skills.devops">Drift & infrastruktur</h3>
                 </div>
 
@@ -294,7 +302,6 @@
 
             <article class="competency-row reveal">
                 <div class="competency-heading">
-                    <span>05</span>
                     <h3 data-i18n="skills.methods">Udviklingsmetoder</h3>
                 </div>
 
@@ -791,12 +798,16 @@
             <p class="eyebrow" data-i18n="education.eyebrow">Uddannelse</p>
         </div>
 
+        <!-- Datamatiker -->
         <article class="education-card reveal">
-
             <div class="education-header">
                 <div>
-                    <p class="education-type" data-i18n="education.type">Erhvervsakademiuddannelse · 150 ECTS</p>
+                    <p class="education-type" data-i18n="education.type">
+                        Erhvervsakademiuddannelse · 150 ECTS
+                    </p>
+
                     <h3 data-i18n="education.program">Datamatiker</h3>
+
                     <p class="education-school" data-i18n="education.school">
                         Erhvervsakademi København — EK
                     </p>
@@ -828,18 +839,31 @@
                 </div>
             </div>
 
+            <!-- 4. semester -->
             <div class="course-focus">
                 <div class="course-focus-heading">
-                    <p class="eyebrow" data-i18n="education.fourthSemester">4. semester</p>
-                    <h4 data-i18n="education.upcomingFocus">Kommende fagligt fokus</h4>
+                    <p class="eyebrow" data-i18n="education.fourthSemester">
+                        4. semester
+                    </p>
+
+                    <h4 data-i18n="education.upcomingFocus">
+                        Kommende fagligt fokus
+                    </h4>
                 </div>
 
                 <div class="course-focus-grid">
-
                     <article class="course-card">
                         <div class="course-topline">
-                            <h5 data-i18n="education.ai.title">AI-agenter & automatisering</h5>
-                            <span class="course-status" data-i18n="education.upcoming">Kommende</span>
+                            <h5 data-i18n="education.ai.title">
+                                AI-agenter & automatisering
+                            </h5>
+
+                            <span
+                                    class="course-status"
+                                    data-i18n="education.upcoming"
+                            >
+                            Kommende
+                        </span>
                         </div>
 
                         <p data-i18n="education.ai.description">
@@ -848,17 +872,34 @@
                         </p>
 
                         <ul>
-                            <li data-i18n="education.ai.item1">Workflow-automatisering med n8n</li>
-                            <li data-i18n="education.ai.item2">Prompt engineering og valg af LLM</li>
-                            <li data-i18n="education.ai.item3">RAG og vektordatabaser</li>
-                            <li data-i18n="education.ai.item4">Test og optimering af AI-agenter</li>
+                            <li data-i18n="education.ai.item1">
+                                Workflow-automatisering med n8n
+                            </li>
+
+                            <li data-i18n="education.ai.item2">
+                                Prompt engineering og valg af LLM
+                            </li>
+
+                            <li data-i18n="education.ai.item3">
+                                RAG og vektordatabaser
+                            </li>
+
+                            <li data-i18n="education.ai.item4">
+                                Test og optimering af AI-agenter
+                            </li>
                         </ul>
                     </article>
 
                     <article class="course-card">
                         <div class="course-topline">
                             <h5>DevOps</h5>
-                            <span class="course-status" data-i18n="education.upcoming">Kommende</span>
+
+                            <span
+                                    class="course-status"
+                                    data-i18n="education.upcoming"
+                            >
+                            Kommende
+                        </span>
                         </div>
 
                         <p data-i18n="education.devops.description">
@@ -867,17 +908,34 @@
                         </p>
 
                         <ul>
-                            <li data-i18n="education.devops.item1">CI/CD-pipelines</li>
-                            <li data-i18n="education.devops.item2">Containerteknologier og Infrastructure as Code</li>
-                            <li data-i18n="education.devops.item3">Deployment, skalering og monitorering</li>
-                            <li data-i18n="education.devops.item4">Produktion, fejlfinding og sikkerhed</li>
+                            <li data-i18n="education.devops.item1">
+                                CI/CD-pipelines
+                            </li>
+
+                            <li data-i18n="education.devops.item2">
+                                Containerteknologier og Infrastructure as Code
+                            </li>
+
+                            <li data-i18n="education.devops.item3">
+                                Deployment, skalering og monitorering
+                            </li>
+
+                            <li data-i18n="education.devops.item4">
+                                Produktion, fejlfinding og sikkerhed
+                            </li>
                         </ul>
                     </article>
 
                     <article class="course-card">
                         <div class="course-topline">
                             <h5>Python</h5>
-                            <span class="course-status" data-i18n="education.upcoming">Kommende</span>
+
+                            <span
+                                    class="course-status"
+                                    data-i18n="education.upcoming"
+                            >
+                            Kommende
+                        </span>
                         </div>
 
                         <p data-i18n="education.python.description">
@@ -886,16 +944,147 @@
                         </p>
 
                         <ul>
-                            <li data-i18n="education.python.item1">Pythonic programmering</li>
-                            <li data-i18n="education.python.item2">Jupyter Notebooks</li>
-                            <li data-i18n="education.python.item3">NumPy, pandas og matplotlib</li>
-                            <li data-i18n="education.python.item4">LLM-integration og debugging</li>
+                            <li data-i18n="education.python.item1">
+                                Pythonic programmering
+                            </li>
+
+                            <li data-i18n="education.python.item2">
+                                Jupyter Notebooks
+                            </li>
+
+                            <li data-i18n="education.python.item3">
+                                NumPy, pandas og matplotlib
+                            </li>
+
+                            <li data-i18n="education.python.item4">
+                                LLM-integration og debugging
+                            </li>
                         </ul>
                     </article>
-
                 </div>
             </div>
 
+            <!-- 5. semester -->
+            <div class="course-focus">
+                <div class="course-focus-heading">
+                    <p class="eyebrow" data-i18n="education.fifthSemester">
+                        5. semester · Januar — juni 2027
+                    </p>
+
+                    <h4 data-i18n="education.internship.title">
+                        Praktikforløb
+                    </h4>
+                </div>
+
+                <div class="course-focus-grid course-focus-grid-single">
+                    <article class="course-card course-card-wide">
+                        <div class="course-topline">
+                            <h5 data-i18n="education.internship.heading">
+                                Praktik i en virksomhed
+                            </h5>
+
+                            <span
+                                    class="course-status"
+                                    data-i18n="education.internship.status"
+                            >
+                            Praktikplads søges
+                        </span>
+                        </div>
+
+                        <p data-i18n="education.internship.description">
+                            På uddannelsens sidste semester skal jeg i praktik
+                            og anvende mine tekniske kompetencer i en professionel
+                            virksomhed. Jeg søger en praktikplads, hvor jeg kan
+                            bidrage til rigtige løsninger og lære af erfarne
+                            udviklere.
+                        </p>
+
+                        <ul>
+                            <li data-i18n="education.internship.item1">
+                                Praktisk softwareudvikling i en virksomhed
+                            </li>
+
+                            <li data-i18n="education.internship.item2">
+                                Samarbejde om rigtige krav og løsninger
+                            </li>
+
+                            <li data-i18n="education.internship.item3">
+                                Faglig udvikling gennem feedback og ansvar
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </article>
+
+        <!-- Planlagt top-up -->
+        <article class="education-card education-card-planned reveal">
+            <div class="education-header">
+                <div>
+                    <p class="education-type" data-i18n="education.topup.type">
+                        Planlagt professionsbachelor (top-up) · 90 ECTS
+                    </p>
+
+                    <h3 data-i18n="education.topup.program">
+                        IT-sikkerhed
+                    </h3>
+
+                    <p
+                            class="education-school"
+                            data-i18n="education.topup.school"
+                    >
+                        Erhvervsakademi København — EK, Guldbergsgade
+                    </p>
+                </div>
+
+                <div class="education-plan-meta">
+                <span
+                        class="course-status"
+                        data-i18n="education.topup.status"
+                >
+                    Planlagt
+                </span>
+
+                    <span
+                            class="education-period"
+                            data-i18n="education.topup.period"
+                    >
+                    Efter juni 2027
+                </span>
+                </div>
+            </div>
+
+            <p
+                    class="education-description"
+                    data-i18n="education.topup.description"
+            >
+                Efter datamatikeruddannelsen planlægger jeg at bygge videre
+                på mit softwarefaglige fundament med en 1½-årig top-up i
+                IT-sikkerhed med fokus på beskyttelse af systemer,
+                applikationer, netværk og data.
+            </p>
+
+            <div class="education-foundation">
+                <h4 data-i18n="education.topup.focus">
+                    Planlagt fagligt fokus
+                </h4>
+
+                <div class="competency-tags">
+                <span data-i18n="education.topup.systemSecurity">
+                    System- & applikationssikkerhed
+                </span>
+
+                    <span data-i18n="education.topup.networkSecurity">
+                    Netværks- & kommunikationssikkerhed
+                </span>
+
+                    <span data-i18n="education.topup.secureDesign">
+                    Design af sikre systemer
+                </span>
+
+                    <span>IT-governance</span>
+                </div>
+            </div>
         </article>
     </section>
 
