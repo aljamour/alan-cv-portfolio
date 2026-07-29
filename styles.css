@@ -497,189 +497,121 @@ h5 {
 /* =========================================================
    5. Hero
 ========================================================= */
+/* =========================================================
+   5. Hero
+========================================================= */
 
 .hero {
   min-height: calc(100vh - 90px);
-  padding-top: 54px;
+  padding-top: 72px;
 
   display: grid;
   grid-template-columns:
-    minmax(0, 1.08fr)
-    minmax(320px, 0.82fr);
+          minmax(0, 1.08fr)
+          minmax(320px, 0.82fr);
 
-  gap: 34px;
+  gap: 54px;
   align-items: center;
 }
 
-.hero-narrative {
-  position: relative;
+.hero-profile {
+  min-width: 0;
+}
+
+.hero-greeting {
+  margin: 0 0 28px;
+
+  color: var(--accent);
+
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.hero-name {
   max-width: 760px;
-  margin-top: 32px;
-  padding: 26px 28px;
-
-  overflow: hidden;
-
-  border: 1px solid var(--line);
-  border-left: 3px solid var(--accent);
-  border-radius: 0 var(--radius-md) var(--radius-md) 0;
-
-  background:
-          linear-gradient(
-                  110deg,
-                  rgba(71, 245, 167, 0.09),
-                  rgba(119, 217, 255, 0.035) 55%,
-                  transparent
-          ),
-          var(--panel);
-}
-
-.hero-narrative::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 160px;
-  height: 1px;
-
-  background:
-          linear-gradient(
-                  90deg,
-                  var(--accent),
-                  transparent
-          );
-}
-
-.hero-hook {
-  max-width: 650px;
   margin: 0;
 
   color: var(--text);
-  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
-  font-weight: 850;
-  line-height: 1.25;
-  letter-spacing: -0.035em;
+
+  font-size:
+          clamp(3.4rem, 5.6vw, 6rem);
+
+  line-height: 0.95;
+  letter-spacing: -0.07em;
+  text-wrap: balance;
 }
 
-.hero-flow {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 8px;
+.hero-role {
+  margin: 24px 0 0;
 
-  margin-top: 20px;
+  color: var(--muted);
 
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size:
+          clamp(1.08rem, 1.7vw, 1.4rem);
+
+  font-weight: 500;
+  line-height: 1.4;
 }
 
-.hero-flow span {
-  min-height: 30px;
-  padding: 0 10px;
+.hero-bio {
+  max-width: 720px;
+  margin-top: 46px;
 
-  display: inline-flex;
-  align-items: center;
+  color: var(--muted);
 
+  font-size:
+          clamp(1rem, 1.35vw, 1.14rem);
+
+  line-height: 1.85;
+}
+
+.hero-bio p {
+  margin: 0;
+}
+
+.hero-bio p + p {
+  margin-top: 12px;
+}
+
+.hero-bio strong {
   color: var(--text);
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--tag-bg);
-
-  font-weight: 750;
-}
-
-.hero-flow i {
-  color: var(--accent);
-  font-style: normal;
-  font-weight: 900;
-}
-
-.hero-proof {
-  max-width: 700px;
-  margin: 22px 0 0;
-
-  color: var(--muted);
-  font-size: 1rem;
-  line-height: 1.72;
-}
-
-.hero-next {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
-  gap: 14px;
-
-  margin: 22px 0 0;
-  padding-top: 18px;
-
-  color: var(--muted);
-  border-top: 1px solid var(--line);
-
-  font-size: 0.88rem;
-  line-height: 1.6;
-}
-
-.hero-next > span:first-child {
-  color: var(--accent);
-
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  font-weight: 900;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-@media (max-width: 680px) {
-  .hero-narrative {
-    padding: 22px 20px;
-  }
-
-  .hero-flow i {
-    display: none;
-  }
-
-  .hero-next {
-    grid-template-columns: 1fr;
-    gap: 8px;
-  }
+  font-weight: 850;
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 34px;
-}
 
-.hero-stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
   margin-top: 36px;
 }
 
-.hero-stats article {
-  padding: 18px;
+@media (max-width: 680px) {
+  .hero {
+    padding-top: 46px;
+  }
 
-  border: 1px solid var(--line);
-  border-radius: var(--radius-md);
-  background: var(--panel);
+  .hero-greeting {
+    margin-bottom: 20px;
+  }
 
-  backdrop-filter: blur(16px);
+  .hero-name {
+    font-size:
+            clamp(3rem, 15vw, 4.7rem);
+  }
+
+  .hero-role {
+    margin-top: 18px;
+  }
+
+  .hero-bio {
+    margin-top: 32px;
+    line-height: 1.72;
+  }
 }
-
-.hero-stats strong {
-  display: block;
-  font-size: 1.15rem;
-}
-
-.hero-stats span {
-  display: block;
-  margin-top: 6px;
-  color: var(--muted);
-  font-size: 0.92rem;
-}
-
 
 /* =========================================================
    6. Terminal card
