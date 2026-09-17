@@ -161,11 +161,11 @@ h1 {
 }
 
 h2 {
-  max-width: 900px;
+  max-width: 800px;
   margin-bottom: 0;
-  font-size: clamp(2.1rem, 4vw, 4.2rem);
-  line-height: 0.96;
-  letter-spacing: -0.06em;
+  font-size: clamp(1.9rem, 3.5vw, 3.2rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
 }
 
 h3 {
@@ -204,7 +204,7 @@ h5 {
 .section-shell {
   width: min(var(--max-width), calc(100% - 32px));
   margin-inline: auto;
-  padding-block: 92px;
+  padding-block: 64px;
 }
 
 .section-heading {
@@ -1440,6 +1440,63 @@ a.project-media:focus-visible {
 
   color: var(--muted);
   line-height: 1.7;
+}
+
+.other-experience-list {
+  display: grid;
+  gap: 0;
+  margin-top: 22px;
+
+  border-top: 1px solid var(--line);
+}
+
+.other-experience-entry {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.other-experience-entry:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.other-experience-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.other-experience-heading h4 {
+  color: var(--text);
+  font-size: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.other-experience-heading span {
+  flex-shrink: 0;
+
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.other-experience-entry .experience-company {
+  margin-top: 6px;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 680px) {
+  .other-experience-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .other-experience-heading span {
+    white-space: normal;
+  }
 }
 
 

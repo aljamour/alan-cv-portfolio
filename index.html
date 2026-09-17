@@ -25,9 +25,9 @@
     </a>
 
     <nav class="desktop-nav" id="mainNavigation" aria-label="Hovednavigation" data-i18n-aria-label="nav.main">
+        <a href="#projects" data-i18n="nav.projects">Projekter</a>
         <a href="#about" data-i18n="nav.about">Om mig</a>
         <a href="#stack" data-i18n="nav.skills">Kompetencer</a>
-        <a href="#projects" data-i18n="nav.projects">Projekter</a>
         <a href="#experience" data-i18n="nav.experience">Erfaring</a>
         <a href="#education" data-i18n="nav.education">Uddannelse</a>
         <a href="#contact" data-i18n="nav.contact">Kontakt</a>
@@ -206,7 +206,7 @@
             <!-- Project Calculation Tool -->
             <article class="project-card reveal">
                 <div class="project-card-top">
-                    <span class="project-number">01</span>
+                    <span class="project-number"></span>
 
                     <a
                             class="project-launch"
@@ -271,7 +271,7 @@
             <!-- Slik Skoven -->
             <article class="project-card reveal">
                 <div class="project-card-top">
-                    <span class="project-number">02</span>
+                    <span class="project-number"></span>
 
                     <a
                             class="project-launch"
@@ -330,68 +330,6 @@
                     <span>Docker Compose</span>
                 </div>
             </article>
-
-
-            <!-- ScopeFlow AI -->
-            <article class="project-card project-card-upcoming reveal">
-                <div class="project-card-top">
-                    <span class="project-number">03</span>
-
-                    <span class="project-status upcoming" data-i18n="projects.upcoming">
-                        Kommer snart
-                    </span>
-                </div>
-
-                <div class="project-media scopeflow-preview" aria-hidden="true">
-                    <div class="scopeflow-preview-grid"></div>
-
-                    <span class="scopeflow-kicker">AI WORKFLOW</span>
-
-                    <div class="scopeflow-flow">
-                        <span class="scopeflow-node" data-i18n="projects.scopeflow.input">
-                            Kundebehov
-                        </span>
-
-                        <span class="scopeflow-arrow">→</span>
-                        <span class="scopeflow-core">AI</span>
-                        <span class="scopeflow-arrow">→</span>
-
-                        <span class="scopeflow-node" data-i18n="projects.scopeflow.output">
-                            Backlog
-                        </span>
-                    </div>
-
-                    <span class="scopeflow-review" data-i18n="projects.scopeflow.review">
-                        ✓ Menneskelig godkendelse
-                    </span>
-                </div>
-
-                <div
-                        class="project-stack project-stack-planned"
-                        aria-label="Planlagt teknologistack"
-                        data-i18n-aria-label="projects.scopeflow.stackAria"
-                >
-                    <span class="project-stack-label" data-i18n="projects.planned">Planlagt</span>
-                    <span>Java</span>
-                    <span>Spring Boot</span>
-                    <span>Spring AI</span>
-                    <span>PostgreSQL</span>
-                </div>
-
-                <h3>ScopeFlow AI</h3>
-
-                <p class="project-summary" data-i18n="projects.scopeflow.summary">
-                    Planlagt AI-assistent, der omsætter ustrukturerede kundebehov
-                    til user stories, acceptkriterier og afklarende spørgsmål,
-                    før resultatet godkendes af et menneske.
-                </p>
-
-                <div class="project-features">
-                    <span data-i18n="projects.scopeflow.structured">Struktureret AI-output</span>
-                    <span data-i18n="projects.scopeflow.human">Human-in-the-loop</span>
-                    <span data-i18n="projects.scopeflow.requirements">Kravspecifikation</span>
-                </div>
-            </article>
         </div>
     </section>
 
@@ -445,6 +383,8 @@
                     <span>JavaScript</span>
                     <span>HTML</span>
                     <span>CSS</span>
+                    <span>Go</span>
+                    <span>Python</span>
                 </div>
             </article>
 
@@ -459,8 +399,9 @@
                     <span>Spring Data JPA</span>
                     <span>Hibernate</span>
                     <span>REST APIs</span>
-                    <span data-i18n="skills.validation">Validering</span>
                     <span>Thymeleaf</span>
+                    <span>Gin</span>
+                    <span>Flask</span>
                 </div>
             </article>
 
@@ -471,10 +412,10 @@
 
                 <div class="competency-tags">
                     <span>SQL</span>
+                    <span>SQLite</span>
                     <span>MySQL</span>
                     <span>H2</span>
                     <span>Flyway</span>
-                    <span data-i18n="skills.erModels">ER-modeller</span>
                     <span data-i18n="skills.dtoMapping">DTO-mapping</span>
                 </div>
             </article>
@@ -529,6 +470,40 @@
         </div>
 
         <div class="experience-list">
+
+            <article class="experience-item reveal">
+                <div class="experience-period">
+                    <span data-i18n="experience.tutor.start">August 2026</span>
+
+                    <span>—</span>
+
+                    <span data-i18n="experience.tutor.end">December 2026</span>
+                </div>
+
+                <div class="experience-content">
+                    <div class="experience-topline">
+                        <div>
+                            <h3 data-i18n="experience.tutor.role">Tutor – Datamatikeruddannelsen</h3>
+
+                            <p class="experience-company">Erhvervsakademi København · Nørrebro</p>
+                        </div>
+
+                        <span class="experience-type" data-i18n="experience.tutor.type">Studiejob</span>
+                    </div>
+
+                    <p class="experience-summary" data-i18n="experience.tutor.summary">
+                        Vejleder første semester-studerende i programmering og
+                        problemløsning og hjælper dem med at forstå opgaver,
+                        fejlfinde kode og omsætte teori til praksis.
+                    </p>
+
+                    <div class="experience-tags">
+                        <span data-i18n="tags.programming">Programmering</span>
+                        <span data-i18n="tags.guidance">Vejledning</span>
+                        <span data-i18n="tags.communication">Formidling</span>
+                    </div>
+                </div>
+            </article>
 
             <article class="experience-item reveal">
                 <div class="experience-period">
@@ -665,119 +640,111 @@
 
             <article class="experience-item reveal">
                 <div class="experience-period">
-                    <span data-i18n="experience.coop.start">Jun. 2021</span>
+                    <span>2018</span>
                     <span>—</span>
-                    <span data-i18n="experience.coop.end">Jun. 2022</span>
+                    <span>2022</span>
                 </div>
 
                 <div class="experience-content">
                     <div class="experience-topline">
                         <div>
-                            <h3 data-i18n="experience.coop.role">Salgs- og servicemedarbejder</h3>
+                            <h3 data-i18n="experience.other.title">
+                                Øvrig erhvervserfaring
+                            </h3>
+
+                            <p
+                                    class="experience-summary"
+                                    data-i18n="experience.other.summary"
+                            >
+                                Tidligere deltidsstillinger med fokus på service,
+                                ansvar, samarbejde og selvstændigt arbejde.
+                            </p>
+                        </div>
+
+                        <span
+                                class="experience-type"
+                                data-i18n="experience.partTime"
+                        >
+                Deltid
+            </span>
+                    </div>
+
+                    <div class="other-experience-list">
+                        <div class="other-experience-entry">
+                            <div class="other-experience-heading">
+                                <h4 data-i18n="experience.coop.role">
+                                    Salgs- og servicemedarbejder
+                                </h4>
+
+                                <span data-i18n="experience.coop.period">
+                        Jun. 2021 – Jun. 2022
+                    </span>
+                            </div>
+
                             <p class="experience-company">
                                 Fakta / Coop 365 Discount · Espergærde
                             </p>
                         </div>
 
-                        <span class="experience-type" data-i18n="experience.partTime">Deltid</span>
-                    </div>
+                        <div class="other-experience-entry">
+                            <div class="other-experience-heading">
+                                <h4 data-i18n="experience.meny.role">
+                                    Butiksmedarbejder
+                                </h4>
 
-                    <p class="experience-summary" data-i18n="experience.coop.summary">
-                        Kundebetjening, vareopfyldning og praktiske opgaver
-                        i den daglige butiksdrift.
-                    </p>
+                                <span>2020 – 2021</span>
+                            </div>
 
-                    <div class="experience-tags">
-                        <span data-i18n="tags.storeOperations">Butiksdrift</span>
-                        <span data-i18n="tags.collaboration">Samarbejde</span>
-                        <span data-i18n="tags.structure">Struktur</span>
-                    </div>
-                </div>
-            </article>
+                            <p class="experience-company">
+                                MENY · Espergærde
+                            </p>
+                        </div>
 
+                        <div class="other-experience-entry">
+                            <div class="other-experience-heading">
+                                <h4 data-i18n="experience.helsingor.role">
+                                    Omdeler
+                                </h4>
 
-            <article class="experience-item reveal">
-                <div class="experience-period">
-                    2020
-                    <span>—</span>
-                    2021
-                </div>
+                                <span>2019 – 2020</span>
+                            </div>
 
-                <div class="experience-content">
-                    <div class="experience-topline">
-                        <div>
-                            <h3 data-i18n="experience.meny.role">Butiksmedarbejder</h3>
-                            <p class="experience-company">MENY · Espergærde</p>
+                            <p class="experience-company">
+                                Helsingør Dagblad
+                            </p>
+                        </div>
+
+                        <div class="other-experience-entry">
+                            <div class="other-experience-heading">
+                                <h4 data-i18n="experience.distributor.role">
+                                    Omdeler
+                                </h4>
+
+                                <span>2018 – 2019</span>
+                            </div>
+
+                            <p class="experience-company">
+                                Bliv.omdeler.nu
+                            </p>
                         </div>
                     </div>
 
-                    <p class="experience-summary" data-i18n="experience.meny.summary">
-                        Kundeservice, varehåndtering og understøttelse af den
-                        daglige drift i butikken.
-                    </p>
-
                     <div class="experience-tags">
-                        <span data-i18n="tags.customerService">Kundeservice</span>
-                        <span data-i18n="tags.merchandiseHandling">Varehåndtering</span>
-                        <span data-i18n="tags.teamwork">Teamwork</span>
-                    </div>
-                </div>
-            </article>
+            <span data-i18n="tags.customerService">
+                Kundeservice
+            </span>
 
+                        <span data-i18n="tags.responsibility">
+                Ansvar
+            </span>
 
-            <article class="experience-item reveal">
-                <div class="experience-period">
-                    2019
-                    <span>—</span>
-                    2020
-                </div>
+                        <span data-i18n="tags.collaboration">
+                Samarbejde
+            </span>
 
-                <div class="experience-content">
-                    <div class="experience-topline">
-                        <div>
-                            <h3 data-i18n="experience.distributor.role">Omdeler</h3>
-                            <p class="experience-company">Helsingør Dagblad</p>
-                        </div>
-                    </div>
-
-                    <p class="experience-summary" data-i18n="experience.helsingor.summary">
-                        Selvstændig planlægning og levering inden for faste
-                        tidsfrister og kvalitetskrav.
-                    </p>
-
-                    <div class="experience-tags">
-                        <span data-i18n="tags.independence">Selvstændighed</span>
-                        <span data-i18n="tags.punctuality">Punktlighed</span>
-                        <span data-i18n="tags.planning">Planlægning</span>
-                    </div>
-                </div>
-            </article>
-
-
-            <article class="experience-item reveal">
-                <div class="experience-period">
-                    2018
-                    <span>—</span>
-                    2019
-                </div>
-
-                <div class="experience-content">
-                    <div class="experience-topline">
-                        <div>
-                            <h3 data-i18n="experience.distributor.role">Omdeler</h3>
-                            <p class="experience-company">Bliv.omdeler.nu</p>
-                        </div>
-                    </div>
-
-                    <p class="experience-summary" data-i18n="experience.distributor.summary">
-                        Ansvar for selvstændig omdeling og gennemførelse
-                        af arbejdet inden for aftalte tidsrammer.
-                    </p>
-
-                    <div class="experience-tags">
-                        <span data-i18n="tags.responsibility">Ansvar</span>
-                        <span data-i18n="tags.discipline">Disciplin</span>
-                        <span data-i18n="tags.independentWork">Selvstændigt arbejde</span>
+                        <span data-i18n="tags.independence">
+                Selvstændighed
+            </span>
                     </div>
                 </div>
             </article>
@@ -834,13 +801,8 @@
             <!-- 4. semester -->
             <div class="course-focus">
                 <div class="course-focus-heading">
-                    <p class="eyebrow" data-i18n="education.fourthSemester">
-                        4. semester
-                    </p>
-
-                    <h4 data-i18n="education.upcomingFocus">
-                        Kommende fagligt fokus
-                    </h4>
+                    <p class="eyebrow" data-i18n="education.fourthSemester">4. semester</p>
+                    <h4 data-i18n="education.currentFocus">Nuværende faglige fokus</h4>
                 </div>
 
                 <div class="course-focus-grid">
@@ -852,7 +814,7 @@
 
                             <span
                                     class="course-status"
-                                    data-i18n="education.upcoming"
+                                    data-i18n="education.current"
                             >
                             Kommende
                         </span>
@@ -888,7 +850,7 @@
 
                             <span
                                     class="course-status"
-                                    data-i18n="education.upcoming"
+                                    data-i18n="education.current"
                             >
                             Kommende
                         </span>
@@ -924,7 +886,7 @@
 
                             <span
                                     class="course-status"
-                                    data-i18n="education.upcoming"
+                                    data-i18n="education.current"
                             >
                             Kommende
                         </span>
@@ -1098,8 +1060,10 @@
             </article>
 
             <article class="value-card reveal">
-                <h3 data-i18n="value.products.title">Jeg tænker i produkter</h3>
-                <p data-i18n="value.products.text">Jeg prøver at forbinde tekniske valg med brugerens behov og virksomhedens mål.</p>
+                <h3 data-i18n="value.products.title">Jeg skaber reel værdi</h3>
+                <p data-i18n="value.products.text">Jeg motiveres af at udvikle løsninger, der gør en mærkbar
+                    forskel – ved at lette menneskers hverdag, løse konkrete
+                    problemer eller skabe bedre oplevelser.</p>
             </article>
 
             <article class="value-card reveal">
