@@ -25,6 +25,11 @@ window.translations = {
     "hero.printButton": "Print CV",
     "hero.fact": "4. semester · EK",
 
+    "terminal.aria": "Programmerterminal",
+    "terminal.whoami": "Alan Al-Jamour — datamatikerstuderende",
+    "terminal.focus": "DevOps · AI-agenter · Python",
+    "terminal.status": "åben for studiejob & praktik",
+
     "projects.eyebrow": "Projekter",
     "projects.title": "Udvalgte projekter",
     "projects.intro": "To projekter, der viser hvordan jeg arbejder med backend, databaser, deployment og brugbare webapplikationer.",
@@ -114,6 +119,11 @@ window.translations = {
     "hero.contactButton": "Contact me",
     "hero.printButton": "Print CV",
     "hero.fact": "4th semester · EK",
+
+    "terminal.aria": "Developer terminal",
+    "terminal.whoami": "Alan Al-Jamour — Computer Science student",
+    "terminal.focus": "DevOps · AI agents · Python",
+    "terminal.status": "open to student jobs & internships",
 
     "projects.eyebrow": "Projects",
     "projects.title": "Selected projects",
