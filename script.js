@@ -171,10 +171,6 @@ copyEmailButton.addEventListener("click", async () => {
   copyStatus.textContent = t(copyStatusKey);
 });
 
-document.querySelector("#printCv").addEventListener("click", () => {
-  window.print();
-});
-
 function setLanguage(language) {
   currentLanguage = supportedLanguages.includes(language) ? language : "da";
 
