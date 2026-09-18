@@ -193,7 +193,7 @@ h1,h2,h3,h4 { margin-top: 0; }
 }
 .hero h1 {
   margin: 0;
-  font-size: clamp(3.4rem, 7vw, 6rem);
+  font-size: clamp(3rem, 6.5vw, 5.7rem);
   line-height: .9;
   letter-spacing: -.07em;
 }
@@ -353,6 +353,10 @@ h1,h2,h3,h4 { margin-top: 0; }
   font-family: var(--font-mono);
   font-size: .82rem;
   line-height: 1.45;
+
+  white-space: pre-line;
+  text-align: center;
+
 }
 .experience-body {
   padding: 18px 20px;
